@@ -1,0 +1,56 @@
+{
+  "variants": {
+    "facing=up,open=false": {
+      "model": "isekubed:block/file_cabinet"
+    },
+    "facing=up,open=true": {
+      "model": "isekubed:block/file_cabinet_open"
+    },
+    "facing=down,open=false": {
+      "model": "isekubed:block/file_cabinet",
+      "x": 180
+    },
+    "facing=down,open=true": {
+      "model": "isekubed:block/file_cabinet_open",
+      "x": 180
+    },
+    "facing=north,open=false": {
+      "model": "isekubed:block/file_cabinet",
+      "x": 90
+    },
+    "facing=north,open=true": {
+      "model": "isekubed:block/file_cabinet_open",
+      "x": 90
+    },
+    "facing=south,open=false": {
+      "model": "isekubed:block/file_cabinet",
+      "x": 90,
+      "y": 180
+    },
+    "facing=south,open=true": {
+      "model": "isekubed:block/file_cabinet_open",
+      "x": 90,
+      "y": 180
+    },
+    "facing=east,open=false": {
+      "model": "isekubed:block/file_cabinet",
+      "x": 90,
+      "y": 90
+    },
+    "facing=east,open=true": {
+      "model": "isekubed:block/file_cabinet_open",
+      "x": 90,
+      "y": 90
+    },
+    "facing=west,open=false": {
+      "model": "isekubed:block/file_cabinet",
+      "x": 90,
+      "y": 270
+    },
+    "facing=west,open=true": {
+      "model": "isekubed:block/file_cabinet_open",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

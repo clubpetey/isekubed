@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "isekubed:block/frieze_tile"
+    },
+    "facing=south": {
+      "model": "isekubed:block/frieze_tile"
+    },
+    "facing=east": {
+      "model": "isekubed:block/frieze_tile"
+    },
+    "facing=west": {
+      "model": "isekubed:block/frieze_tile"
+    }
+  }
+}

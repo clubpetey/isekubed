@@ -1,0 +1,15 @@
+{
+  "id": "isekubed:dialogue/clerk_2",
+  "duration": 78,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "You haven't got standing. I can see you, I simply can't receive you.",
+      "for": 78
+    }
+  ]
+}

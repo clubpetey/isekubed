@@ -1,0 +1,15 @@
+{
+  "id": "isekubed:dialogue/ambient_4",
+  "duration": 102,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "Mind the drawers. They stick when it's been a while, and it has always been a while.",
+      "for": 102
+    }
+  ]
+}

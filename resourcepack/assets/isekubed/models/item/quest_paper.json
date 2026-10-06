@@ -1,0 +1,39 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "isekubed:item/scroll",
+    "layer1": "isekubed:item/quest_rank_e"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "isekubed:rank": 0.1
+      },
+      "model": "isekubed:item/quest_paper_d"
+    },
+    {
+      "predicate": {
+        "isekubed:rank": 0.2
+      },
+      "model": "isekubed:item/quest_paper_c"
+    },
+    {
+      "predicate": {
+        "isekubed:rank": 0.3
+      },
+      "model": "isekubed:item/quest_paper_b"
+    },
+    {
+      "predicate": {
+        "isekubed:rank": 0.4
+      },
+      "model": "isekubed:item/quest_paper_a"
+    },
+    {
+      "predicate": {
+        "isekubed:rank": 0.5
+      },
+      "model": "isekubed:item/quest_paper_s"
+    }
+  ]
+}

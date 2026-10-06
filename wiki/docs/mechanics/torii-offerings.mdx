@@ -1,0 +1,37 @@
+# Torii Offerings
+
+Recipe files go in `data/<namespace>/recipe/`, with `"type": "isekubed:torii_offering"`.
+
+## Fields
+
+| Field | Always present | Description |
+|---|---|---|
+| `type` | yes | Always `isekubed:torii_offering`. |
+| `circle` | yes | A circle id. The circle the offering is made under. |
+| `offering` | yes | Non-empty list of entries. Each is `{ "item": <item id> }` or `{ "tag": <item tag id> }`, plus optional `count` (integer, 1 to 1728, default `1`). Every entry must be present in the offering container. |
+| `result` | yes | Object with a `type` that selects what is produced. Types `word_scroll`, `lost_knowledge` and `spell_scroll` take no other fields. `summon` takes `mob` (entity type id) and optional `xp_points` (integer, default `0`, drained from the caster). `loot_table` takes `table` (loot table id) and optional `rolls` (integer, 1 to 64, default `1`, per conversion). |
+
+## Example
+
+An invented example.
+
+```json
+{
+  "type": "isekubed:torii_offering",
+  "circle": "isekubed:example_circle",
+  "offering": [
+    {
+      "item": "minecraft:stick",
+      "count": 3
+    },
+    {
+      "tag": "minecraft:logs"
+    }
+  ],
+  "result": {
+    "type": "loot_table",
+    "table": "minecraft:gameplay/fishing",
+    "rolls": 2
+  }
+}
+```

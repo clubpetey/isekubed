@@ -1,0 +1,76 @@
+# Daily Quests
+
+Sleep in a bed, wear the Eye, and wake up with a chore.
+
+## Getting one
+
+A daily quest is rolled when you **sleep through the night** while wearing the [Eye of Loot]($mechanics/eye_of_loot). That means the Eye is in your helmet slot or a Curios slot. Getting out of bed early, or being knocked out of it, rolls nothing. If you never sleep, you never get a quest.
+
+The quest is announced in the Eye's info box. It is also pinned to the top of your journal (**Ctrl+Y**), with how far along you are and what it pays.
+
+**Sleep again and the old quest is thrown away** when a new one is rolled. You get nothing for the one you dropped. A quest runs out after one in-game day.
+
+Some quests belong to one magic level. Your magic level is the highest numeral you know, with 0 counting as 10. A quest with a level is offered only to players at exactly that level, and a quest without one is offered at every level.
+
+## Doing it
+
+Every task is a Minecraft statistic: kill 20 zombies, mine some stone, crouch a thousand times. The quest remembers your statistic when it is rolled and counts from there. Kills you made yesterday don't count towards it.
+
+The game checks once a second. The moment the task is done you get a **Task Complete!** box and are paid. A quest pays once. Anything still owed when you log out is paid when you log back in, as long as the quest hasn't run out.
+
+## Rewards
+
+You can see the reward in your journal as soon as the quest is rolled. It does not change afterwards. A quest pays one of these:
+
+- **An item**, in some quantity.
+- **Loot** rolled from a loot table, one or more times.
+- **A random item from a tag.** Two players finishing the same quest can be paid differently.
+- **A tip.** A tip is a riddle that goes straight into your journal. It pays no item. Tips are how some of the game's secrets are handed out. The wiki doesn't say which.
+
+Items go into your inventory, or drop at your feet if it is full. Big rewards arrive as normal stacks.
+
+## For pack makers
+
+Daily quests are datapack files in `data/<namespace>/daily_quests/`. Any mod's statistics work, with no integration. An empty folder, or a folder where every weight is 0, turns daily quests off.
+
+A malformed file fails the whole reload, and the error names the file.
+
+| Field | Meaning |
+|---|---|
+| `description` | Lang key of the message shown to the player. Required, not blank. |
+| `task` | A statistic **type** id, such as `minecraft:killed`, `minecraft:mined` or `minecraft:custom`. |
+| `task_param` | That type's value id, such as an entity, a block, or a custom statistic. |
+| `task_qty` | How many, counted from the roll. At least 1. |
+| `reward` | An object with a `type`, below. |
+| `weight` | Optional. How likely this quest is against the others. Default 1. `0` means never drawn. Negative is an error. |
+| `magic_level` | Optional, 1 to 10. The quest is offered only to a player whose magic level (the highest numeral they know, numeral 0 counting as 10) is exactly this. Absent means every level, including players who know no numerals. |
+
+Reward `type` values:
+
+| `type` | Fields |
+|---|---|
+| `item` | `id` (an item), `reward_qty` (optional, default 1) |
+| `loot_table` | `id` (a loot table), `reward_qty` (optional, default 1): how many times to roll it |
+| `tag` | `id` (an item tag), `reward_qty` (optional, default 1): one item is picked at random from the tag |
+| `tip` | `id` of an Eye notice, normally one with the `quest_tip` trigger, which never fires on its own. No quantity. |
+
+`reward_qty` goes from 1 to 1024. A quest whose statistic or tip isn't known to the game is not rolled. A reward item, tag or loot table the game doesn't know, or an empty tag, pays nothing. Either way a warning is logged.
+
+A made-up example:
+
+```json
+{
+  "description": "quest.example_pack.bake_bread",
+  "task": "minecraft:crafted",
+  "task_param": "minecraft:bread",
+  "task_qty": 12,
+  "weight": 3,
+  "reward": {
+    "type": "item",
+    "id": "minecraft:golden_carrot",
+    "reward_qty": 8
+  }
+}
+```
+
+This pack's own statistic `isekubed:times_crouched` counts crouch presses, not ticks. Use it with `"task": "minecraft:custom"`.

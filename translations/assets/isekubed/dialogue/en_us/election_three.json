@@ -1,0 +1,33 @@
+{
+  "id": "isekubed:dialogue/election_three",
+  "duration": 458,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "Election A. Restoration.",
+      "for": 20
+    },
+    {
+      "at": "clip_1+20",
+      "type": "say",
+      "text": "Your soul is restored in full. Everything you spent, everything you traded away on the climb — returned. You walk out of here whole.",
+      "for": 144
+    },
+    {
+      "at": "clip_1+164",
+      "type": "say",
+      "text": "You will not receive the tenth tier. Not the knowledge of it, not the memory of it, not the ability to be told about it later by someone else.",
+      "for": 174
+    },
+    {
+      "at": "clip_1+338",
+      "type": "say",
+      "text": "You'll remember wanting it. That part isn't reversible. I'm sorry about that, it's not mine, it was written that way.",
+      "for": 120
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "isekubed:dialogue/beat_five",
+  "duration": 438,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "Further and finally: the Administrator's decision is final; the Administrator's decision may be appealed to the Administrator;",
+      "for": 102
+    },
+    {
+      "at": "clip_1+102",
+      "type": "say",
+      "text": "appeals are heard on the second Tuesday of never;",
+      "for": 54
+    },
+    {
+      "at": "clip_1+156",
+      "type": "say",
+      "text": "the Applicant waives all claim to remains, inventory, and narrative significance;",
+      "for": 66
+    },
+    {
+      "at": "clip_1+222",
+      "type": "say",
+      "text": "the Applicant consents to observation by departments not yet formed;",
+      "for": 60
+    },
+    {
+      "at": "clip_1+282",
+      "type": "say",
+      "text": "the Applicant acknowledges that 'chosen one' is a marketing term with no standing in this office;",
+      "for": 96
+    },
+    {
+      "at": "clip_1+378",
+      "type": "say",
+      "text": "the Applicant acknowledges that the minecart was not my idea",
+      "for": 60
+    }
+  ]
+}

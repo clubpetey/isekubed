@@ -1,0 +1,15 @@
+{
+  "id": "isekubed:dialogue/clerk_4",
+  "duration": 84,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "You may wait. People do. There's no seating and I won't be making conversation.",
+      "for": 84
+    }
+  ]
+}

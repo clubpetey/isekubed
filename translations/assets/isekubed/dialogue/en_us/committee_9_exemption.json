@@ -1,0 +1,15 @@
+{
+  "id": "isekubed:dialogue/committee_9_exemption",
+  "duration": 24,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "09 — It read the exemption.",
+      "for": 24
+    }
+  ]
+}

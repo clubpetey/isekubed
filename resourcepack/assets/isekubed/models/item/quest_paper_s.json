@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "isekubed:item/scroll",
+    "layer1": "isekubed:item/quest_rank_s"
+  }
+}

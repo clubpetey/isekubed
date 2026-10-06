@@ -1,0 +1,32 @@
+# Crushing
+
+Recipe files go in `data/<namespace>/recipe/`, with `"type": "isekubed:crush"`.
+
+## Fields
+
+| Field | Always present | Description |
+|---|---|---|
+| `type` | yes | Always `isekubed:crush`. |
+| `input` | yes | Object with a `type` of `item` or `entity`. An `item` input has `ingredient` (an ingredient: item id object or `#tag`) and optional `count` (integer, default `1`, at least 1). An `entity` input has `entity` (an entity type id): a mob standing in the circle, which is not consumed. |
+| `ticks` | yes | Integer, at least 1, in ticks. How long one conversion takes. |
+| `output` | yes | Object with a `type` of `mana`, `item` or `fluid`. `mana` has `amount` (integer, at least 1; per conversion, before the circle's multiplier). `item` has `result` (an item stack object). `fluid` has `fluid` (a fluid id) and `mb` (integer, at least 1, in millibuckets). |
+
+## Example
+
+From the mod: `data/isekubed/recipe/crush/cow_to_milk.json`.
+
+```json
+{
+  "type": "isekubed:crush",
+  "input": {
+    "type": "entity",
+    "entity": "minecraft:cow"
+  },
+  "ticks": 200,
+  "output": {
+    "type": "fluid",
+    "fluid": "minecraft:milk",
+    "mb": 1000
+  }
+}
+```

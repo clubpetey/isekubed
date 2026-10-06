@@ -1,0 +1,31 @@
+# Growth Yields
+
+Recipe files go in `data/<namespace>/recipe/`, with `"type": "isekubed:grow_yield"`.
+
+## Fields
+
+| Field | Always present | Description |
+|---|---|---|
+| `type` | yes | Always `isekubed:grow_yield`. |
+| `host` | yes | Block id string. The block the growth circle is drawn on. |
+| `face` | yes | Direction string (`down`, `up`, `north`, `south`, `west`, `east`), default `up`. The face of the host the circle is drawn on. |
+| `neighbours` | yes | Integer, 0 to 4096, default `0`. How many other blocks of the same kind must share the circle's plane. |
+| `period_ticks` | yes | Integer, at least 1, in ticks. How often one output drops. |
+| `min_rung` | yes | Integer, 1 to 9, default `1`. The lowest growth circle level that yields. |
+| `output` | yes | Item id string. The item dropped on the far side of the face from the host. |
+
+## Example
+
+From the mod: `data/isekubed/recipe/grow_yield/banana.json`.
+
+```json
+{
+  "type": "isekubed:grow_yield",
+  "host": "minecraft:jungle_leaves",
+  "face": "down",
+  "neighbours": 3,
+  "period_ticks": 100,
+  "min_rung": 2,
+  "output": "isekubed:banana"
+}
+```

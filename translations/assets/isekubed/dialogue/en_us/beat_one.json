@@ -1,0 +1,39 @@
+{
+  "id": "isekubed:dialogue/beat_one",
+  "duration": 350,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "Ah! An applicant.",
+      "for": 20
+    },
+    {
+      "at": "clip_1+20",
+      "type": "say",
+      "text": "Come in, come in...  the torches stay lit, you know. They always have. Nobody ever mentions it.",
+      "for": 102
+    },
+    {
+      "at": "clip_1+122",
+      "type": "say",
+      "text": "You've come for the Tenth Tier. Of course you have. Everyone does, eventually.",
+      "for": 78
+    },
+    {
+      "at": "clip_1+200",
+      "type": "say",
+      "text": "Have you a receipt? No? Ah, well, they never issue one anyway.",
+      "for": 72
+    },
+    {
+      "at": "clip_1+272",
+      "type": "say",
+      "text": "I'll note it as irregular and we'll proceed anyway; I'm not a monster.",
+      "for": 78
+    }
+  ]
+}

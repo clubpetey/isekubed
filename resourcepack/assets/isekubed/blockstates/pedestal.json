@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "has_gem=false": { "model": "isekubed:block/pedestal" },
+    "has_gem=true": { "model": "isekubed:block/pedestal_gem" }
+  }
+}

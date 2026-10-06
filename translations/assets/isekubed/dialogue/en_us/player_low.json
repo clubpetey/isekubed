@@ -1,0 +1,15 @@
+{
+  "id": "isekubed:dialogue/player_low",
+  "duration": 120,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "Oh, you've gone quite pale. Would you like a potion? I have — hold on — I have a pumpkin.",
+      "for": 120
+    }
+  ]
+}

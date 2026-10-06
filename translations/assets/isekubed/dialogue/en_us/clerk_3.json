@@ -1,0 +1,15 @@
+{
+  "id": "isekubed:dialogue/clerk_3",
+  "duration": 84,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "Records Retrieval has your file. Records Retrieval has had your file for some time.",
+      "for": 84
+    }
+  ]
+}

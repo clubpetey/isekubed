@@ -1,0 +1,15 @@
+{
+  "id": "isekubed:dialogue/repeat_count_15",
+  "duration": 102,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "At this point I feel we're in a relationship, and I would like to see other mortals.",
+      "for": 102
+    }
+  ]
+}

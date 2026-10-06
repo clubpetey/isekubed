@@ -1,0 +1,15 @@
+{
+  "id": "isekubed:dialogue/repeat_count_10",
+  "duration": 102,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "I am going to be honest with you. I am running out of ways to say 'welcome.'",
+      "for": 102
+    }
+  ]
+}

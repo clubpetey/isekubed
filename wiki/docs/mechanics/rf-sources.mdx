@@ -1,0 +1,23 @@
+# RF Sources
+
+Recipe files go in `data/<namespace>/recipe/`, with `"type": "isekubed:rf_source"`.
+
+## Fields
+
+| Field | Always present | Description |
+|---|---|---|
+| `type` | yes | Always `isekubed:rf_source`. |
+| `block` | yes | Block id string. A block that generates RF for an RF-splitting circle whose area covers it. The block is not consumed. |
+| `rf_per_tick` | yes | Integer, at least 1. RF generated per tick. |
+
+## Example
+
+From the mod: `data/isekubed/recipe/rf_source/ancient_debris.json`.
+
+```json
+{
+  "type": "isekubed:rf_source",
+  "block": "minecraft:ancient_debris",
+  "rf_per_tick": 20
+}
+```

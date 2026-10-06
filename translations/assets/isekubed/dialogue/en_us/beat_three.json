@@ -1,0 +1,39 @@
+{
+  "id": "isekubed:dialogue/beat_three",
+  "duration": 390,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "Now. The Rite is not a battle, whatever you may have been told by whoever sold you that armor.",
+      "for": 114
+    },
+    {
+      "at": "clip_1+114",
+      "type": "say",
+      "text": "The Rite is an assessment. You are being reviewed.",
+      "for": 54
+    },
+    {
+      "at": "clip_1+168",
+      "type": "say",
+      "text": "The striking is incidental — a formality that grew out of the older process, which involved considerably more forms and took eight hundred years.",
+      "for": 144
+    },
+    {
+      "at": "clip_1+312",
+      "type": "say",
+      "text": "Most applicants prefer the striking. I've never understood it.",
+      "for": 54
+    },
+    {
+      "at": "clip_1+366",
+      "type": "say",
+      "text": "The forms were peaceful.",
+      "for": 24
+    }
+  ]
+}

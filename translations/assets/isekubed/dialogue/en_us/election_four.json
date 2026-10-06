@@ -1,0 +1,45 @@
+{
+  "id": "isekubed:dialogue/election_four",
+  "duration": 590,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "Election B. Completion.",
+      "for": 20
+    },
+    {
+      "at": "clip_1+20",
+      "type": "say",
+      "text": "Every spell. Every tier. Every word of every schedule, including the ones I haven't read. The tenth tier and all beneath it, everything, at once.",
+      "for": 150
+    },
+    {
+      "at": "clip_1+170",
+      "type": "say",
+      "text": "The cost is assessed immediately. Your soul is reduced to... nine percent.",
+      "for": 72
+    },
+    {
+      "at": "clip_1+242",
+      "type": "say",
+      "text": "I'm required to characterize that figure. At nine percent the world stops agreeing with you.",
+      "for": 90
+    },
+    {
+      "at": "clip_1+332",
+      "type": "say",
+      "text": "You'll hear things that are speaking and things that aren't. Stones won't stay where it's put. Curses attach without cause and leave just the same.",
+      "for": 150
+    },
+    {
+      "at": "clip_1+482",
+      "type": "say",
+      "text": "It isn't survivable in the sense you mean and it isn't fatal in the sense you mean either.",
+      "for": 108
+    }
+  ]
+}

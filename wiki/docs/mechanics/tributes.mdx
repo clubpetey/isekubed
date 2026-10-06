@@ -1,0 +1,38 @@
+# Tributes
+
+Recipe files go in `data/<namespace>/recipe/`, with `"type": "isekubed:tribute"`.
+
+## Fields
+
+| Field | Always present | Description |
+|---|---|---|
+| `type` | yes | Always `isekubed:tribute`. |
+| `mob` | yes | Entity type id string. The mob the proof is shown to. |
+| `kind` | yes | String, one of `held_item`, `network_drain`, `stats` or `witness_kill`. Selects which proof is evaluated; each kind requires its own field (`held` for `held_item`, one of `drain`, `mana` or `xp` for `network_drain`, a non-empty `stats` for `stats`, `witness` for `witness_kill`). |
+| `held` | no | Optional item id string. The item the player must be holding. Required for `held_item`. The other `held_*` fields need this one. |
+| `held_components` | no | Optional object of data components the held item must carry (partial match). |
+| `consumed` | no | Boolean. Whether the held item is taken on success. Defaults to `true` for `held_item` and `false` for every other kind. |
+| `soul_cost_bp` | no | Integer, 0 to 10000, default `0`. Soul burned on success, in basis points (hundredths of a percent) of the player's soul total. |
+| `xp` | no | Optional integer, at least 1. Experience points taken from the player. For `network_drain`. |
+| `held_name` | no | Optional string. The custom name the held item must carry. |
+| `witness` | no | Object `{ "entity": <entity type id>, "radius": <int, 1 to 256, default 32> }`. For `witness_kill`: a mob of that type must die within `radius` blocks of the mob while a player is present. |
+| `drain` | no | List of `{ "item": <item id>, "count": <int, at least 1> }`, or a single such object. For `network_drain`: items taken from the player's network. Default empty. All or nothing. |
+| `held_explosions` | no | Optional integer, 1 to 64. The number of explosions the held item must carry. |
+| `held_count` | no | Integer, 1 to 64, default `1`. How many of the held item are required. |
+| `stats` | no | List of `{ "stat": <statistic id>, "min": <int, at least 1>, "since": "dawn" }`. For `stats`: every entry must hold. `since` is optional; `dawn` counts only from the last dawn snapshot, and omitting it counts all time. Default empty. |
+| `mana` | no | Optional integer, at least 1. Mana taken from the player's network. For `network_drain`. |
+
+## Example
+
+An invented example.
+
+```json
+{
+  "type": "isekubed:tribute",
+  "mob": "minecraft:villager",
+  "kind": "held_item",
+  "held": "minecraft:stick",
+  "held_count": 2,
+  "soul_cost_bp": 100
+}
+```

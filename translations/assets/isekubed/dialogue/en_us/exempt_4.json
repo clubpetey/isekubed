@@ -1,0 +1,15 @@
+{
+  "id": "isekubed:dialogue/exempt_4",
+  "duration": 66,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "This is exactly what I've been saying since the Bronze Age.",
+      "for": 66
+    }
+  ]
+}

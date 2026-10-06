@@ -1,0 +1,19 @@
+# Teleport
+
+Travel between places you have marked. You mark a place by drawing a gate and right-clicking it with an item; that item is then the key to that gate.
+
+- **Gate** marks a destination you can reach from the same dimension. A gate with nothing bound makes a stop for an elevator.
+- **Planar Gate** is a destination you can reach from any dimension. It costs more to draw.
+- **Passage** is not drawn on anything. You cast it and it takes you to the gate bound to the item you hold. Aimed at a creature, it sends that creature to your gate for an entity key (a red bed, as shipped); with no such gate it fizzles and costs nothing. Holding nothing that is bound to a gate you can reach, it opens the teleport window instead.
+- **Traveller's Pad** is a circle drawn on the top of a block. Bind it to a key item and any player who steps on it goes to your gate for that item, so a base entrance works for guests too. It only works while you, its owner, are online, and while the destination can be reached.
+- **Freight Pad** is the same idea for everything: players, mobs and dropped items. It costs more to draw and to keep, but each trip is cheaper, and a whole stack of items travels for the price of one.
+
+A gate costs mana once, when drawn. Passage costs mana per use. Pads cost upkeep and charge for each trip.
+
+| Circle | Mana (cast) | Mana upkeep (per batch) | Mana working (per batch) |
+|---|---|---|---|
+| Gate | 2000 | 0 | 0 |
+| Planar Gate | 10000 | 0 | 0 |
+| Passage | 400 | 0 | 0 |
+| Traveller's Pad | 200 | 2 | 200 |
+| Freight Pad | 2000 | 5 | 10 |

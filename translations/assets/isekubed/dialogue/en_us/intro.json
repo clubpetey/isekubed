@@ -1,0 +1,195 @@
+{
+  "id": "isekubed:dialogue/intro",
+  "duration": 2994,
+  "markers": {
+    "clip_1": 0,
+    "clip_2": 126,
+    "clip_3": 642,
+    "clip_4": 834,
+    "clip_5": 1374,
+    "clip_6": 2286,
+    "clip_7": 2718
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "Ah. Yes. Ancient magic. The Tenth Schedule.",
+      "for": 42
+    },
+    {
+      "at": "clip_1+42",
+      "type": "say",
+      "text": "Not abandoned, incidentally — that's the version everyone tells. It was withdrawn. Different paperwork.",
+      "for": 84
+    },
+    {
+      "at": "clip_2",
+      "type": "say",
+      "text": "The original practitioners exceeded every understanding available to them.",
+      "for": 54
+    },
+    {
+      "at": "clip_2+54",
+      "type": "say",
+      "text": "They reshaped the magic of this world at will, in whatever direction pleased them, whenever they felt like, coffee not-with-standing.",
+      "for": 120
+    },
+    {
+      "at": "clip_2+174",
+      "type": "say",
+      "text": "Life and death. Man and beast. The inert and the living. The flow of time itself.",
+      "for": 96
+    },
+    {
+      "at": "clip_2+270",
+      "type": "say",
+      "text": "They went through every established boundary of the world and kept going, until they were writing magic that bent the laws of reality",
+      "for": 138
+    },
+    {
+      "at": "clip_2+408",
+      "type": "say",
+      "text": "and there was no schedule, no register, no form to fill in, and nobody to file it with.",
+      "for": 108
+    },
+    {
+      "at": "clip_3",
+      "type": "say",
+      "text": "One cannot tamper with what should never have existed and not be assessed for it. Proper paperwork must be filed.",
+      "for": 120
+    },
+    {
+      "at": "clip_3+120",
+      "type": "say",
+      "text": "The world went into absolute chaos. This was recorded as an \"incident\".",
+      "for": 72
+    },
+    {
+      "at": "clip_4",
+      "type": "say",
+      "text": "The survivors convened a review. I have read the findings. Four thousand pages and, in places, quite moving.",
+      "for": 108
+    },
+    {
+      "at": "clip_4+108",
+      "type": "say",
+      "text": "Their conclusion: the power was too great to be wielded freely by anyone.",
+      "for": 78
+    },
+    {
+      "at": "clip_4+186",
+      "type": "say",
+      "text": "Their second conclusion, arrived at later and with documented reluctance:",
+      "for": 60
+    },
+    {
+      "at": "clip_4+246",
+      "type": "say",
+      "text": "there would come a time when the power to bend the laws of nature would be necessary.",
+      "for": 102
+    },
+    {
+      "at": "clip_4+348",
+      "type": "say",
+      "text": "So they did not destroy it. They established sentinels - a class of authorized practitioner, licensed, reviewed, and approved.",
+      "for": 114
+    },
+    {
+      "at": "clip_4+462",
+      "type": "say",
+      "text": "It was clever. I want that on the record. It was genuinely clever.",
+      "for": 78
+    },
+    {
+      "at": "clip_5",
+      "type": "say",
+      "text": "The review anticipated the obvious objection. An approved practitioner is still a practitioner.",
+      "for": 78
+    },
+    {
+      "at": "clip_5+78",
+      "type": "say",
+      "text": "License someone and they may yet do the very thing you licensed them against.",
+      "for": 84
+    },
+    {
+      "at": "clip_5+162",
+      "type": "say",
+      "text": "So standing is not granted once - it is held, and reviewed, and may be withdrawn at any time by the issuing office.",
+      "for": 138
+    },
+    {
+      "at": "clip_5+300",
+      "type": "say",
+      "text": "And then they warded the world. Every last acre.",
+      "for": 54
+    },
+    {
+      "at": "clip_5+354",
+      "type": "say",
+      "text": "Not all magic, mind you. The lower nine schedules were left alone - they're the residue, and there was no appetite for the extra paperwork.",
+      "for": 150
+    },
+    {
+      "at": "clip_5+504",
+      "type": "say",
+      "text": "But the tenth. The ward destroys anyone who reaches above the ninth without standing.",
+      "for": 84
+    },
+    {
+      "at": "clip_5+588",
+      "type": "say",
+      "text": "It does not ask how they came to be without it - whether they never had it, or had it and lost it on a Tuesday.",
+      "for": 156
+    },
+    {
+      "at": "clip_5+744",
+      "type": "say",
+      "text": "Oh, sentinels? There are none. There has never been one. The exemption has sat unclaimed since the day the ward went up, and the post is still open.",
+      "for": 168
+    },
+    {
+      "at": "clip_6",
+      "type": "say",
+      "text": "The ward came with schedules. Schedule Two is practice without standing - that one is short, and it is thoroughly enforced.",
+      "for": 126
+    },
+    {
+      "at": "clip_6+126",
+      "type": "say",
+      "text": "Schedule One is implements. Every blade, every bow, every stave, every tool anyone thought worth the trouble of registering.",
+      "for": 114
+    },
+    {
+      "at": "clip_6+240",
+      "type": "say",
+      "text": "It is a long list. It is a good list.",
+      "for": 60
+    },
+    {
+      "at": "clip_6+300",
+      "type": "say",
+      "text": "But it has not been revised since the day it was written, and I have raised this. I continue to raise this.",
+      "for": 132
+    },
+    {
+      "at": "clip_7",
+      "type": "say",
+      "text": "So. If you want the tenth tier, you'll have to come and ask for it. In person. There's an application that must be completed.",
+      "for": 144
+    },
+    {
+      "at": "clip_7+144",
+      "type": "say",
+      "text": "I'm at the center of the world. So come when you're ready. The torches stay lit.",
+      "for": 96
+    },
+    {
+      "at": "clip_7+240",
+      "type": "say",
+      "text": "Bring whatever you think will help.",
+      "for": 36
+    }
+  ]
+}

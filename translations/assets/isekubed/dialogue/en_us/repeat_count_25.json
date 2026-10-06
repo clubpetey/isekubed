@@ -1,0 +1,15 @@
+{
+  "id": "isekubed:dialogue/repeat_count_25",
+  "duration": 42,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "Come in. The torches are still lit.",
+      "for": 42
+    }
+  ]
+}

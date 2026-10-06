@@ -1,0 +1,35 @@
+# Mana Blocks
+
+A Mana Block is a block that has been turned into something you cannot see. It is the cleanest host for a circle: nothing to look at, nothing to walk around, nothing to break by accident.
+
+## What it does
+
+- **Invisible.** You see the circle on it, not the block.
+- **Walk through it.** Players, pets and ordinary creatures pass straight through.
+- **Hostile mobs cannot.** Hostile mobs and angry neutral mobs are stopped by a Mana Block, and one that would slip across is put back where it was. A tamed pet is never blocked.
+- **Arrows and other projectiles hit it** as if it were solid.
+- **Shields against effects.** Explosions, splash potions and lingering clouds do not reach a creature that has a Mana Block between it and where the blast or bottle went off. Evoker fangs are blocked the same way.
+- **Indestructible.** You cannot mine it.
+- **Items catch on it.** An item dropped or thrown onto a circle on its top or bottom face rests on it instead of falling through.
+
+A Mana Block that carries a Redstone Mana I circle (see [Redstone]($circles/redstone)) gives off a redstone signal. It is the only block that can take that circle.
+
+## Making one
+
+Sneak and right-click a block with a Mana Gem. The block becomes a Mana Block, and you pay the mana, from your pool and the gems you carry. The default price is 10,000 mana, and the server can change it with `mana_block_conversion_cost`. If you cannot afford it, the game tells you what it would cost and what you have.
+
+Some blocks cannot be converted: air, a block that is already a Mana Block, a block that has an inventory or other block data (a chest, a furnace), and anything unbreakable such as bedrock. The block you convert is used up, and it does not come back.
+
+## Circles on a Mana Block
+
+A block can carry a circle on each of its faces, so a Mana Block can be a whole machine in a single invisible cube. For example, a [Smelt]($circles/smelt) circle on the top and a [Craft]($circles/craft) circle underneath.
+
+## Removing one
+
+Sneak and right-click it with a Mana Gem again. It disappears in a puff of smoke, every circle on it goes with it, and it drops as a Mana Block item. Place that item and it is an invisible Mana Block again, with no mana to pay.
+
+An alchemist villager at master level also sells Mana Blocks.
+
+## Other uses
+
+A Mana Block item is also an ingredient. It is how a Bag of Holding gains columns (see [Bags]($mechanics/bags)), and it goes into the CAD.

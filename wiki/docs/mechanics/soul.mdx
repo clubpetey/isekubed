@@ -1,0 +1,114 @@
+# Soul
+
+Mana is what you spend. Soul is what you are made of.
+
+Every mage starts with a full soul. It is not a bar on your screen and there is no number to read. You find out how you
+are doing by how the game treats you, and by one colour on the casting bar.
+
+## Two ways to lose it
+
+Your soul is a ceiling minus a fuel gauge: **soul = ceiling - fuel**.
+
+- **Sacrifice lowers the ceiling, for good.** Learning is paid for in soul, and what you pay is never refunded.
+- **Fuel is soul you have burned by using magic.** It can be recovered.
+
+The ceiling is a share of your total soul. These are the shares, and they are percentages of the total, so they scale
+with the `soul_total` setting (default 2000).
+
+| What it is | Share of total | Kind |
+|---|---|---|
+| Learning numerals | 21% | Permanent. Split across the numerals 2 to 9, bigger numerals costing more |
+| Learning spells taught by mobs | 35% | Permanent. Split evenly across all such spells |
+| Forging a Philosopher's Stone | 35% | Permanent. Paid once |
+| The rest | 9% | Can never be spent |
+| One cast of a soul-burning spell | 0.5% | Fuel |
+| One imbuement | 0.5% | Fuel |
+
+A numeral or a mob-taught spell that a mage earns, instead of taking it by force, costs half its share.
+
+Learning never takes you to empty, and neither does an imbuement. If paying for a numeral, a spell, a Stone or an
+imbuement would leave you with nothing, the game refuses and you keep your soul. Casting a soul-burning spell, or
+awakening a Stand, can take you all the way down.
+
+At the default total of 2000, one cast or imbuement burns 10 points, the Stone costs 700, and 180 points can never be
+spent. Costs round down.
+
+Other things burn fuel too.
+
+- Some rituals, summons and tributes take soul.
+- Each hit with your own Zanpakutō costs soul, by default 2 points per level above the first
+  (`bankai_soul_per_level`). If a hit would drop you under 0.25%, the sword falls back to its first level instead.
+- Most Stand abilities cost 2 points, and some cost more. An ability that would take you under 5% sends your Stand
+  away instead.
+- A circle that fires a soul-burning spell burns its owner's soul, but never below 9%, and only while the owner is
+  online.
+- Lifting a placed Black Hole with a Philosopher's Stone burns your soul down to 8%. At 8% or below, the lift is refused. See [The Trial of Yourself]($mechanics/trial).
+
+Creative players burn no fuel. The permanent sacrifice is worked out from what they know, so it still applies.
+
+## Tiers
+
+What your soul does to you depends on how much is left.
+
+| Tier | Soul left | What happens |
+|---|---|---|
+| Whole | 50% or more | Nothing |
+| Whispers | 40% to 50% | Whispers now and then, more often in the dark. Glyphs flicker in front of your eyes |
+| Voices | 30% to 40% | You get shoved and the screen shakes. Casts can fail outright |
+| Weird | 10% to 30% | The world near you misbehaves: small fires, some blocks turned to stone, crops dying |
+| Curses | Under 10% | A curse lands on you every so often: blindness, nausea, weakness, slowness, mining fatigue, hunger, poison, darkness or bad luck |
+| Empty | 0 | Reset (see below) |
+
+Each tier keeps the effects of the tiers above it.
+
+- **A failed cast** (Voices and below) is rolled when you cast. The failure chance is 5% by default
+  (`soul_cast_failure_percent`). The mana is still spent.
+- Whispers and shakes are cosmetic. Shoves, failed casts, fires, stone, dead crops and curses only happen to players in
+  survival mode.
+- The world effects leave alone any block that holds a circle, any block entity (chests, furnaces and the like) and
+  any Mana Block.
+
+## The only readout
+
+The casting bar that runs when you fire a CAD changes colour with what the shot would leave you with.
+
+| Colour | Meaning |
+|---|---|
+| Green | After this cast you will still be above 10% |
+| Yellow | This cast leaves you in the Curses tier, or you are already there |
+| Red | This cast would take you to zero |
+
+While your soul is high the bar is only a cast timer, and it stays green.
+
+## Empty: the reset
+
+If your soul hits zero you start over.
+
+- Every Philosopher's Stone and Mana Gem you carry is destroyed. That covers your inventory, the bags you carry and
+  the chests of your network.
+- Your circles in loaded areas are cancelled. A circle in an unloaded area is left, with nothing to pay for it. Mana
+  Blocks stay where they are.
+- You forget everything you have learned, and have to learn DISCOVER again.
+- Your mana pool and your soul start fresh.
+
+## Getting it back
+
+Fuel comes back from eating certain foods.
+
+| Food | Restores |
+|---|---|
+| Enchanted golden apple | 0.5% |
+| Golden apple | 0.2% |
+| Banana | 0.2% |
+| Glistering melon slice | 0.07% |
+
+An enchanted golden apple pays back exactly one cast. The glistering melon slice can be eaten for this. Food can only
+restore fuel. It never lifts you above your ceiling.
+
+Soul does not regenerate on its own. Apart from food, one Stand ability can share soul with the players around it. The
+permanent sacrifice does not come back at all.
+
+## For server admins
+
+`soul_total` sets the total everything is a share of. The `soul_*` settings tune the tier effects. All of them are
+listed under [Commands and Config]($mechanics/commands).

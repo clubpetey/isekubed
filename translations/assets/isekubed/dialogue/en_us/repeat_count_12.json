@@ -1,0 +1,15 @@
+{
+  "id": "isekubed:dialogue/repeat_count_12",
+  "duration": 126,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "Your file has its own drawer now. I want you to understand what that means to a department like this one.",
+      "for": 126
+    }
+  ]
+}

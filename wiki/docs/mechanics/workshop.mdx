@@ -1,0 +1,45 @@
+# Workshop
+
+You learn magic by drawing it. To study you need a **workshop** (an atelier), a **discovery pedestal** in it, and a [Magic Pen]($mechanics/magic_pen).
+
+## What counts as a workshop
+
+The game checks the room around the pedestal. It must be:
+
+- **Enclosed.** Open sky, unloaded chunks and gaps all fail. A glass roof counts as a roof.
+- **Small enough.** The default limit is **512 air blocks**. Server owners can set it anywhere from 27 to 4096. A room that is too big is reported as not enclosed.
+- **Fitted out.** The room must touch a **door**, a **bed** and a **lit light** (candles, torches, lanterns, shroomlight and redstone lamps, and a pack may add more). An unlit candle or lamp is not a light.
+
+Doors and fence gates, open or shut, are walls to the check. A bed in the next room doesn't count.
+
+If the room fails, the discovery circle goes red and still, and anyone studying is told why: not enclosed, no door, no bed or no light.
+
+## The discovery pedestal
+
+A discovery pedestal is a pedestal with the **Discover** circle on it. Put something on it and right-click (without sneaking). What happens depends on the item:
+
+- **A word scroll** offers its word. Hold the pen in your main hand and draw the word.
+- **Paper** opens the writing surface, to write a scroll. See [Magic Pen]($mechanics/magic_pen).
+- **A glyph reagent** shows you its glyph and teaches it to you. No pen is needed.
+- **A spell or a written spell scroll** is refused. Spells are learned from [teachers]($teachers).
+- **A circle you wrote on a scroll** offers the first of its words you don't know yet. Once you know them all, it opens the whole circle as a reference.
+- **A word scroll whose word you already know** opens a reference screen with no cost.
+- Other items can teach too. The wiki doesn't say which.
+
+Each glyph you draw while studying costs **1 ink** and some **mana**, right or wrong. The mana comes from the network of whoever drew the Discover circle. A wrong glyph fails the attempt. Running out of mana ends it with a "too tired" message. A standing Discover circle costs nothing.
+
+## Drawing glyphs
+
+1. Hold **left shift**. This does not make you sneak while the screen is open.
+2. Draw the glyph on the grid with the mouse. Everything you draw while shift is held is **one glyph**, so glyphs made of several marks work.
+3. **Release shift.** If the glyph is right, it locks in.
+
+When you are done with a word, draw the **Confirm** glyph: a straight line across the centre row of the grid.
+
+You can only draw words and glyphs you have **learned**, so each new circle is something you find, not something you look up. If you try a glyph you haven't learned in a cast, the cast fizzles.
+
+## Mastery
+
+Draw a glyph correctly enough times and you **master** it. The default is **8** correct drawings, and a server can change that. Once a glyph is mastered you can type it instead. You never lose mastery, even if the server raises the number.
+
+You can type letters A to Z, numbers 0 to 9, and the dash or the space bar for the Confirm glyph. Typed glyphs are free (no ink, no mana) but don't count towards mastery. While you hold shift to draw, keystrokes are part of the drawing and are not typed.

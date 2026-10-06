@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "isekubed:item/adventurer_permit",
+    "layer1": "isekubed:item/adventurer_permit_overlay"
+  }
+}

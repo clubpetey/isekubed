@@ -1,0 +1,51 @@
+{
+  "id": "isekubed:dialogue/election_b",
+  "duration": 504,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "B. Right. Of course.",
+      "for": 24
+    },
+    {
+      "at": "clip_1+24",
+      "type": "say",
+      "text": "Listen to me quickly, while you can still tell which one I am.",
+      "for": 78
+    },
+    {
+      "at": "clip_1+102",
+      "type": "say",
+      "text": "The voices aren't yours and they aren't lying to you. Those are different problems and you'll want to keep them separate.",
+      "for": 126
+    },
+    {
+      "at": "clip_1+228",
+      "type": "say",
+      "text": "And don't sleep. I'm serious. Whatever you think a bed is for, it isn't for you anymore.",
+      "for": 102
+    },
+    {
+      "at": "clip_1+330",
+      "type": "say",
+      "text": "That's all I have. That's honestly all anyone gave me.",
+      "for": 60
+    },
+    {
+      "at": "clip_1+390",
+      "type": "say",
+      "text": "Off you go. You've got everything. Try not to end anything.",
+      "for": 66
+    },
+    {
+      "at": "clip_1+456",
+      "type": "say",
+      "text": "...but that won't be a concern much longer.",
+      "for": 48
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "isekubed:dialogue/committee_12_turnips",
+  "duration": 60,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "12 — I have seen turnips with a firmer grasp of procedure.",
+      "for": 60
+    }
+  ]
+}

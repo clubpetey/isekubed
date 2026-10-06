@@ -1,0 +1,56 @@
+# Cauldron Rituals
+
+Recipe files go in `data/<namespace>/recipe/`, with `"type": "isekubed:cauldron_ritual"`.
+
+## Fields
+
+| Field | Always present | Description |
+|---|---|---|
+| `type` | yes | Always `isekubed:cauldron_ritual`. |
+| `base` | yes | Object `{ "item": <item id>, "minimum": <int, 0 or more>, "spread": <int, 1 or more> }`. The reagent the ratio is counted from. The world picks one amount in the band `minimum` to `minimum + spread - 1` and every cauldron in that world wants it. |
+| `paired` | yes | Item id string. The second reagent, measured against the base by `ratio`. |
+| `ratio` | yes | Object `{ "numerator": <int>, "denominator": <int> }`. The amount of paired reagent wanted is the base amount times numerator divided by denominator, rounded down. |
+| `hues` | yes | Object of three integers, `target_hue`, `base_hue` and `paired_hue`: the water colours (signed ARGB integers) shown when the mixture is right, when there is too much of the base reagent, and when there is too much of the paired reagent. |
+| `circle` | no | Optional circle id. When present the cauldron must be under that circle. |
+| `circle_level` | no | Integer, default `0`. The lowest level of `circle` required; `0` means none. |
+| `input` | yes | Item id string. The item thrown into the cauldron. |
+| `input_components` | yes | Optional object of data components the thrown item must carry. A partial match: other components are ignored. Default is no requirement. |
+| `output` | yes | Item stack object (`id`, optional `count`, optional `components`). What the thrown item becomes; its components are set as written. |
+
+## Example
+
+From the mod: `data/isekubed/recipe/cauldron_grade_a.json`. Circle ids are shown as `isekubed:example_circle`.
+
+```json
+{
+  "type": "isekubed:cauldron_ritual",
+  "base": {
+    "item": "isekubed:sulfur",
+    "minimum": 128,
+    "spread": 128
+  },
+  "paired": "isekubed:mercury",
+  "ratio": {
+    "numerator": 1618,
+    "denominator": 1000
+  },
+  "hues": {
+    "target_hue": -29670,
+    "base_hue": -7697860,
+    "paired_hue": -6577237
+  },
+  "circle": "isekubed:example_circle",
+  "circle_level": 8,
+  "input": "isekubed:philosophers_stone",
+  "input_components": {
+    "isekubed:stone_grade": "b"
+  },
+  "output": {
+    "id": "isekubed:philosophers_stone",
+    "components": {
+      "isekubed:stone_grade": "a",
+      "isekubed:purity": 0
+    }
+  }
+}
+```

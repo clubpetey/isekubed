@@ -1,0 +1,33 @@
+{
+  "_comment": "H-vi (Q-G1, smoke 2026-09-14): vanilla paper, blue. Filled and turned, the overrides pick the arrow model by the isekubed:blueprint property: 0 blank, 0.2/0.4/0.6/0.8 = rotation 0/90/180/270. No grid - the sheet is too small for one.",
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "isekubed:item/blueprint"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "isekubed:blueprint": 0.15000000000000002
+      },
+      "model": "isekubed:item/blueprint_0"
+    },
+    {
+      "predicate": {
+        "isekubed:blueprint": 0.35000000000000003
+      },
+      "model": "isekubed:item/blueprint_1"
+    },
+    {
+      "predicate": {
+        "isekubed:blueprint": 0.55
+      },
+      "model": "isekubed:item/blueprint_2"
+    },
+    {
+      "predicate": {
+        "isekubed:blueprint": 0.75
+      },
+      "model": "isekubed:item/blueprint_3"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "isekubed:dialogue/transition_three",
+  "duration": 216,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "...Fine. Fine. You want the tenth tier? You want my schedule?",
+      "for": 66
+    },
+    {
+      "at": "clip_1+66",
+      "type": "say",
+      "text": "Do you know how long I studied? Four thousand years. Four thousand. And you arrived here with a diamond pickaxe and a reasonable sleep schedule.",
+      "for": 150
+    }
+  ]
+}

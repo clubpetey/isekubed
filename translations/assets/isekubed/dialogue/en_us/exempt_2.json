@@ -1,0 +1,15 @@
+{
+  "id": "isekubed:dialogue/exempt_2",
+  "duration": 96,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "Put that down. Put it — that's a garden implement, you can't — that isn't dignified—",
+      "for": 96
+    }
+  ]
+}

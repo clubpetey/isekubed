@@ -1,0 +1,15 @@
+{
+  "id": "isekubed:dialogue/covered_3",
+  "duration": 60,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "That sword is beautifully documented. Truly. Someone took real care.",
+      "for": 60
+    }
+  ]
+}

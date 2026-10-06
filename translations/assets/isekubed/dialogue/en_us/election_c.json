@@ -1,0 +1,21 @@
+{
+  "id": "isekubed:dialogue/election_c",
+  "duration": 68,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "Well.",
+      "for": 20
+    },
+    {
+      "at": "clip_1+20",
+      "type": "say",
+      "text": "Don't stand. You don't stand for this part.",
+      "for": 48
+    }
+  ]
+}

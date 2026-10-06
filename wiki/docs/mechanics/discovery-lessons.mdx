@@ -1,0 +1,25 @@
+# Discovery Lessons
+
+Recipe files go in `data/<namespace>/recipe/`, with `"type": "isekubed:discovery_lesson"`.
+
+## Fields
+
+| Field | Always present | Description |
+|---|---|---|
+| `type` | yes | Always `isekubed:discovery_lesson`. |
+| `item` | yes | Item id string. The item that teaches. Its data components are ignored. |
+| `words` | yes | Non-empty ordered list of circle ids, with no duplicates. The lessons the item teaches, in order; each use offers the first one the player does not yet know. |
+
+## Example
+
+An invented example.
+
+```json
+{
+  "type": "isekubed:discovery_lesson",
+  "item": "minecraft:stick",
+  "words": [
+    "isekubed:example_circle"
+  ]
+}
+```

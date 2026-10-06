@@ -1,0 +1,99 @@
+{
+  "id": "isekubed:dialogue/election_c_handover",
+  "duration": 910,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "Right. Handover.",
+      "for": 20
+    },
+    {
+      "at": "clip_1+20",
+      "type": "say",
+      "text": "A hundred and ninety cabinets, fifty-four to a drawer.",
+      "for": 54
+    },
+    {
+      "at": "clip_1+74",
+      "type": "say",
+      "text": "Three upstairs for the ordering... the stamps tell you the sequence, it's a sequence I did not choose and cannot defend.",
+      "for": 126
+    },
+    {
+      "at": "clip_1+200",
+      "type": "say",
+      "text": "Twelve are elsewhere. You'll find them. They're difficult and they know it.",
+      "for": 72
+    },
+    {
+      "at": "clip_1+272",
+      "type": "say",
+      "text": "You'll want to know how long it takes.",
+      "for": 48
+    },
+    {
+      "at": "clip_1+320",
+      "type": "say",
+      "text": "I don't know. I never started.",
+      "for": 36
+    },
+    {
+      "at": "clip_1+356",
+      "type": "say",
+      "text": "One more thing, and I'll be brief, because I'm not entirely in control of the timing.",
+      "for": 96
+    },
+    {
+      "at": "clip_1+452",
+      "type": "say",
+      "text": "That's mine. It's the only one I ever filled out.",
+      "for": 60
+    },
+    {
+      "at": "clip_1+512",
+      "type": "say",
+      "text": "You'll find two gaps in the last cabinet. Second-to-last slot is mine. I'd take it as a kindness.",
+      "for": 108
+    },
+    {
+      "at": "clip_1+620",
+      "type": "say",
+      "text": "The last one is yours.",
+      "for": 30
+    },
+    {
+      "at": "clip_1+650",
+      "type": "say",
+      "text": "Don't fill it early.",
+      "for": 24
+    },
+    {
+      "at": "clip_1+674",
+      "type": "say",
+      "text": "There's something folded inside it. That one doesn't go in a slot.",
+      "for": 72
+    },
+    {
+      "at": "clip_1+746",
+      "type": "say",
+      "text": "I'd meant to send it. I never worked out how from in here.",
+      "for": 78
+    },
+    {
+      "at": "clip_1+824",
+      "type": "say",
+      "text": "You'll be going out eventually, I'd appreciate if you sent it...",
+      "for": 66
+    },
+    {
+      "at": "clip_1+890",
+      "type": "say",
+      "text": "...Administrator.",
+      "for": 20
+    }
+  ]
+}

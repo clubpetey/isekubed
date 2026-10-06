@@ -1,0 +1,48 @@
+# Bags
+
+## Gem Bag
+
+A Gem Bag is a pouch for Mana Gems. It holds eight of them, and the mana in the gems counts toward your own while the bag is on you. You make one from string and leather. Right-click it to put every loose Mana Gem you carry into it, or shift-right-click to spill it.
+
+## Bag of Holding
+
+A Bag of Holding is a Gem Bag that has been through a [Transmute]($circles/transmute) circle: throw an empty Gem Bag onto a Transmute I circle and it becomes a Bag of Holding. Right-click it to open it, or shift-right-click to spill everything inside onto the ground.
+
+It has the same gem row as the Gem Bag, plus rows of storage. The server decides how many rows (the default is six), and each row is nine wide.
+
+**Making it wider.** Throw the bag onto a Transmute I circle together with a Mana Block and the bag gains a column. The Mana Block is used up. It can take six, so the storage goes from nine slots wide to fifteen. The first Mana Block also adds a slot for an Enchanted Tome, below.
+
+### Features
+
+A bare bag is only a bag. Features are added one at a time, and the bag tells you so itself: "Cast a circle on a pedestal and right-click this onto it." Draw one of the circles below on a pedestal and right-click the bag onto it. The bag rests on the pedestal for a moment, the circle is used up, and the bag stays on the pedestal with the feature for you to take back. If the bag already has everything that circle gives, nothing happens and the circle is kept.
+
+A higher level of the circle also gives everything a lower level would. Each feature shows as a small spinning circle beside the bag's window. Click it to switch the feature off and on. Switching a feature off never loses it. The Craft feature is the exception: it has no switch.
+
+| Feature | Circle | What it does |
+|---|---|---|
+| Magnet | [Store]($circles/store) I | Pulls dropped items within a few blocks into the bag. By default it takes anything. The server can narrow it to item kinds the bag already holds. It leaves alone items with a pickup delay and items bound to another player. |
+| Salvage | [Split]($circles/split) I | An item that enters the bag is taken apart by the reverse of a crafting scroll you carry or have filed. With no scroll for it, nothing happens, so special items are safe. |
+| Smelt | [Smelt]($circles/smelt) I | An item that enters the bag is smelted first, when a furnace recipe exists for it. Salvage runs before Smelt. |
+| Craft | [Craft]($circles/craft) I | Adds a Craft tab to the bag's window, the same crafting view the Craft circle has. |
+| Deep | [Store]($circles/store) II | Every slot becomes a bottomless pile. A slot no longer holds a stack, it holds one kind of item, and it holds any amount of it. The number of slots is the number of different items the bag can keep. Two items with different enchantments or other data count as different kinds. |
+| Network | [Store]($circles/store) VI | The storage tab becomes a window onto your [storage network]($mechanics/storage). Anything the bag takes in goes to the network. Whatever was in the bag's storage moves into the network when the feature is added (anything the network can't take stays in the bag), and the gem row and the Tome slot stay where they were. |
+| Growth | [Growth]($circles/growth) I | Pour out a water bucket and the bucket in your hand fills again. Placing cobblestone gives the cobblestone back if the bag, or the network behind it, holds both a water bucket and a lava bucket. |
+| Void | [Crush]($circles/crush) I | Adds a Void tab with a list of nine items. Listed items are refused by the bag and turned into mana instead. |
+
+### The Void list
+
+The Void tab holds a filter of up to nine items, one per slot. An item can be on the list only once. An entry matches the item and its data, so listing one enchanted book does not void every book.
+
+A listed item that the Magnet picks up, or that you put into the bag, is destroyed and pays you mana. Mana comes from blocks, and harder blocks pay more. An item that is not a block is simply destroyed and pays nothing. The list only acts on arrival, so what is already in the bag stays.
+
+### Never put a bag inside a bag
+
+**Do not put a Bag of Holding into another Bag of Holding.** Both bags are destroyed and everything they held spills out. The game checks first: if either bag has anything in Deep storage, both bags are left alone and you are told so.
+
+## Enchanted Tome
+
+An Enchanted Tome is a book that files things for you. Throw a plain book onto a Transmute I circle to make one. Its book has ten pages of slots.
+
+A Tome holds crafting scrolls or enchanted books, never both. Whichever goes in first decides, and an empty Tome takes either. The Tome has a vacuum switch: when it is on, a Tome that is empty or holding books pulls enchanted books out of your inventory and your bags into itself. A Tome holding scrolls does not vacuum.
+
+Carry it in your inventory, or put it in the Tome slot of a Bag of Holding that has had at least one Mana Block added.

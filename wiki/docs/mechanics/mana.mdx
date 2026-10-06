@@ -1,0 +1,91 @@
+# Mana
+
+Every spell, circle and gadget runs on mana. You carry some in your own pool, you store more in Mana Gems, and the
+circles you build spend it by themselves.
+
+## Your pool
+
+You have a personal pool. New players get 2000 (`player_pool_cap`). It refills completely when you wake up from a
+bed, and again when you respawn after dying.
+
+Mana Gems hold much more. A new gem holds 100,000 (`gem_capacity`). Gems you carry, loose in your inventory or in a
+bag without the network feature, top your pool up whenever it has room, and they pay for your casts directly when the pool runs dry.
+
+The command `/ik mana` shows your pool, the charge in your gems and the total.
+
+Opening the casting screen costs 100 mana (`cast_open_cost`). A spell cast from your own screen is paid from your
+pool and the gems you carry, nowhere else.
+
+## Where circles get theirs
+
+Circles do not touch your pool. A circle you have drawn takes its mana from your **network**, in this order.
+
+1. Black Hole twins, if you own them. They hold a balance with no practical limit.
+2. Gems in chests that carry a STORE circle of yours.
+3. Gems in pedestals that carry a STORE circle of yours.
+4. Gems in your bags with the network feature, while you are online and in the same dimension.
+
+If the network is dry, the circle goes dark. The exception is STORE circles themselves. They fall back to your own pool
+and carried gems, so you can bootstrap a network from nothing. See [Storage]($mechanics/storage).
+
+Mana that circles earn goes back into the same network, into your bags first and the twins last.
+
+## What things cost
+
+Circles have three kinds of cost, set per level in each circle's table.
+
+| Cost | When you pay it |
+|---|---|
+| Cast | When you make the circle, and each time a CAD fires it |
+| Upkeep | Every batch, for as long as the circle stands |
+| Working | Every batch in which the circle is actually doing its job |
+
+A batch is one second by default (`batch_ticks`, 20 ticks). A circle with no mana left stops working until its network
+has some again.
+
+`mana_cast_percent`, `mana_upkeep_percent` and `mana_working_percent` scale every circle's costs at once.
+
+### Philosopher's Stone rebates
+
+The best Philosopher's Stone you carry makes everything cheaper. The higher the grade, the bigger the discount.
+
+| Grade | Casting and working | Upkeep |
+|---|---|---|
+| F | 5% off | 10% off |
+| D | 10% off | 20% off |
+| C | 15% off | 30% off |
+| B | 20% off | 40% off |
+| A | 25% off | 50% off |
+| S | 30% off | 60% off |
+
+Costs round up. The rebate follows the circle's owner. Servers can switch it off with `stone_rebate`.
+
+## Pausing circles with redstone
+
+A circle is paused while a redstone component next to the block it is drawn on powers that block, from any side. A
+paused circle pays no upkeep and does no work.
+
+- These pause a circle: a lever or button on the block, a redstone torch beside or under it, a repeater, comparator or
+  observer pointing into it, and a redstone block against it.
+- Plain redstone dust never does, and neither does an ordinary block that something else powers. Dust can run right
+  past a circle.
+- A circle that reads a redstone signal listens to the block on its own face. That block does not pause it.
+- A paused STORE circle also drops out of the network, so its chest and gems stop counting until the signal goes.
+- An RF Split circle ignores a free RF source beside it, such as a redstone block, because that is its fuel and not a
+  switch. See [RF Bridge]($mechanics/rf_bridge).
+
+## Where mana comes from
+
+- **Pedestals.** A Mana Gem sitting on a pedestal charges itself every batch. It counts crops growing within 8 blocks
+  (1 point each), living mobs in range (8 points each, undead excluded, and much more for mana-rich mobs such as
+  endermen) and the biome around it (verdant biomes like jungle and swamp give 4, fertile ones like forest and plains
+  give 1, barren ones nothing). One point is one mana. Every number can be changed with the `harvest_*` settings.
+- **The RF bridge.** Turn Forge Energy into mana and back. See [RF Bridge]($mechanics/rf_bridge).
+- **Crush.** Crushing blocks pays mana into your network by how hard they are.
+- **Disenchant.** Stripping an enchantment pays mana into your network.
+- **Pattern Blue.** What it digs up goes to your network, your bags and your pack. Anything on a void list, or that
+  nothing has room for, is paid to you as mana by how hard it is.
+
+Mana Blocks are the invisible blocks that chain circles together. See [Mana Blocks]($mechanics/mana_blocks).
+
+Spending your last point of soul wipes your gems and your Stone. See [Soul]($mechanics/soul).

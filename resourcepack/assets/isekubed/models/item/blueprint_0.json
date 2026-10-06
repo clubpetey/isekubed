@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "isekubed:item/blueprint",
+    "layer1": "isekubed:item/blueprint_arrow_0"
+  }
+}

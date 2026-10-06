@@ -1,0 +1,42 @@
+# The CAD's materials. G-vii task 3b.
+#
+# Ka IS THE GLOW, and it is why the shipped MTL could not be used as it was: every material
+# in it declared Ka 1.0 1.0 1.0, and NeoForge's emissive_ambient defaults to TRUE, so the
+# WHOLE gun would have rendered at full brightness in a dark cave - smoke step 13's
+# "if everything glows" failure, shipped by default. Only mat_glow may have a non-zero Ka.
+
+newmtl mat0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.1 0.1 0.1
+Ns 250
+d 1
+illum 2
+map_Kd isekubed:item/cad_diffuse
+
+# 342 of the 768 faces - 45 percent of the gun - wear this material, and the supplied
+# material_0_diffuse.png was 1x1 and FULLY TRANSPARENT. Nearly half the mesh would have
+# rendered invisible, and no gate renders a frame to notice (L41).
+newmtl mat1
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+Ns 250
+d 1
+illum 1
+map_Kd isekubed:item/cad_black
+
+# The glow shell, and since G-vii-d the TINT shell too - one set of quads doing both, which is
+# the owner's ruling ("dyeing changes the glow color too") made structural rather than enforced:
+# they cannot disagree, being the same faces. Ka 1 1 1 bakes a full-brightness lightmap in; the
+# mask's transparent texels cut the rest away; and neoforge_TintIndex 0 hands the colour to
+# AlchemyItemColours, which reads the item's dye and defaults to the crimson the owner chose.
+newmtl mat_glow
+Ka 1.0 1.0 1.0
+neoforge_TintIndex 0
+Kd 1 1 1
+Ks 0 0 0
+Ns 250
+d 1
+illum 1
+map_Kd isekubed:item/cad_emissive

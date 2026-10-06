@@ -1,0 +1,93 @@
+{
+  "id": "isekubed:dialogue/beat_four",
+  "duration": 1512,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "Pursuant to the Tenth Schedule, I am required to disclose the following, and I would ask that you not strike me while I do, as it's considered rude.",
+      "for": 168
+    },
+    {
+      "at": "clip_1+168",
+      "type": "say",
+      "text": "For the duration of the assessment the Applicant may not employ spellcraft, sorcery, alchemy, venom, curse, blessing, or any conjured effect,",
+      "for": 126
+    },
+    {
+      "at": "clip_1+294",
+      "type": "say",
+      "text": "all of which fall under my own jurisdiction and would represent a conflict of interest.",
+      "for": 90
+    },
+    {
+      "at": "clip_1+384",
+      "type": "say",
+      "text": "The Administrator is warded against all registered instruments of war as enumerated in Appendix C paragraph 3.",
+      "for": 102
+    },
+    {
+      "at": "clip_1+486",
+      "type": "say",
+      "text": "This covers blades, axes, bows, and any implement bearing a recognized certification — sharpness, smiting, and so forth.",
+      "for": 108
+    },
+    {
+      "at": "clip_1+594",
+      "type": "say",
+      "text": "Registration confers coverage. The better registered the implement, the more thorough the coverage.",
+      "for": 78
+    },
+    {
+      "at": "clip_1+672",
+      "type": "say",
+      "text": "Appendix C does not cover agricultural equipment. Agriculture is administered by the Office of Cultivated Ground.",
+      "for": 96
+    },
+    {
+      "at": "clip_1+768",
+      "type": "say",
+      "text": "We have been asking them to update the list since the Bronze Age.",
+      "for": 78
+    },
+    {
+      "at": "clip_1+846",
+      "type": "say",
+      "text": "Applicants presenting no implement whatsoever will be recorded as having withdrawn.",
+      "for": 66
+    },
+    {
+      "at": "clip_1+912",
+      "type": "say",
+      "text": "The Applicant is billed for the assessment at the standard rate. Payment is taken from the estate where applicable.",
+      "for": 114
+    },
+    {
+      "at": "clip_1+1026",
+      "type": "say",
+      "text": "Upon approval the office is vacated and the Administrator's standing lapses. Successor arrangements are governed by Appendix Q.",
+      "for": 108
+    },
+    {
+      "at": "clip_1+1134",
+      "type": "say",
+      "text": "In the event of approval, the award is bifurcated. The Applicant will be presented two elections and may take one.",
+      "for": 120
+    },
+    {
+      "at": "clip_1+1254",
+      "type": "say",
+      "text": "I am not permitted to characterize the elections in advance, as that would constitute advice.",
+      "for": 90
+    },
+    {
+      "at": "clip_1+1344",
+      "type": "say",
+      "text": "I am permitted to tell you that the election is irrevocable, and that every applicant who has ever asked me to reverse it has asked within the hour.",
+      "for": 168
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "isekubed:dialogue/clerk_1",
+  "duration": 20,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "Mm. No.",
+      "for": 20
+    }
+  ]
+}

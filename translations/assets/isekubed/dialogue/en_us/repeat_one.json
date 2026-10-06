@@ -1,0 +1,15 @@
+{
+  "id": "isekubed:dialogue/repeat_one",
+  "duration": 66,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "You again. Right. I'll skip the terms, you've heard the terms.",
+      "for": 66
+    }
+  ]
+}

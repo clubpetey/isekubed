@@ -1,0 +1,15 @@
+{
+  "id": "isekubed:dialogue/ambient_6",
+  "duration": 90,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "I did count them, once. It came out the same, which I found I minded.",
+      "for": 90
+    }
+  ]
+}

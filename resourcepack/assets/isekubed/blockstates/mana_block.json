@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "emits=false": { "model": "minecraft:block/air" },
+    "emits=true": { "model": "minecraft:block/air" }
+  }
+}

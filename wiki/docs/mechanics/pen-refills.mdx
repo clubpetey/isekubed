@@ -1,0 +1,21 @@
+# Pen Refills
+
+Recipe files go in `data/<namespace>/recipe/`, with `"type": "isekubed:pen_refill"`.
+
+## Fields
+
+| Field | Always present | Description |
+|---|---|---|
+| `type` | yes | Always `isekubed:pen_refill`. |
+| `category` | yes | Crafting book category string (`building`, `redstone`, `equipment` or `misc`). A crafting-grid recipe: a damaged magic pen plus one ink restores ink. The amounts are fixed in code, not in the recipe. |
+
+## Example
+
+From the mod: `data/isekubed/recipe/magic_pen_refill.json`.
+
+```json
+{
+  "type": "isekubed:pen_refill",
+  "category": "misc"
+}
+```

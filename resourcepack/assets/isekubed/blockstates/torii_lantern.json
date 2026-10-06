@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "isekubed:block/torii_lantern"
+    },
+    "hanging=true": {
+      "model": "isekubed:block/torii_lantern_hanging"
+    }
+  }
+}

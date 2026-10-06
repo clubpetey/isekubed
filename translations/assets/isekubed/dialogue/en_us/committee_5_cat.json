@@ -1,0 +1,15 @@
+{
+  "id": "isekubed:dialogue/committee_5_cat",
+  "duration": 90,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "05 — It swings that like a man trying to put out a fire with a cat.",
+      "for": 90
+    }
+  ]
+}

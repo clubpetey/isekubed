@@ -1,0 +1,15 @@
+{
+  "id": "isekubed:dialogue/leave",
+  "duration": 60,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "Withdrawal must be submitted in writing. In triplicate. I'll wait.",
+      "for": 60
+    }
+  ]
+}

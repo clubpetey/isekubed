@@ -1,0 +1,15 @@
+{
+  "id": "isekubed:dialogue/exempt_1",
+  "duration": 54,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "—ngh. What. What is that. Is that a hoe?",
+      "for": 54
+    }
+  ]
+}

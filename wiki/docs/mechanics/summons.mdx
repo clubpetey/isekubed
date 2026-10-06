@@ -1,0 +1,55 @@
+# Summons
+
+Recipe files go in `data/<namespace>/recipe/`, with `"type": "isekubed:mob_summon"`.
+
+## Fields
+
+| Field | Always present | Description |
+|---|---|---|
+| `type` | yes | Always `isekubed:mob_summon`. |
+| `mob` | yes | Entity type id string. The mob to spawn. It must be one of the mod's named mobs. |
+| `trigger` | yes | String, one of `use_on_block`, `use_on_entity`, `throw_on_circle`, `enter_area` or `use_on_circle`. The gesture. `use_on_block` needs `block`; `use_on_circle` and `throw_on_circle` need `circle`; `use_on_entity` needs `entity`; `enter_area` needs `structure`. |
+| `held` | no | Optional item id string. The item the player must hold. Without it the gesture must be `enter_area` or `passes_click`. The other `held_*` fields need this one. |
+| `circle` | no | Optional circle id. The circle the gesture must happen on. |
+| `time` | no | Optional string: `day`, `night` or a tick window `"from-to"` (each 0 to 23999). The time of day the gesture works. |
+| `held_enchant` | no | Optional object `{ "enchantment": <enchantment id>, "min_level": <int, default 1> }`. An enchantment the held item must carry. |
+| `held_name` | no | Optional string. The custom name the held item must carry. |
+| `entity` | no | Optional entity type id string. The mob the gesture is performed on. The other `entity_*` fields need this one. |
+| `entity_baby` | no | Optional boolean. Whether the target mob must be a baby (`true`) or an adult (`false`). |
+| `replaces_target` | no | Boolean, default `false`. When `true` the target mob is removed when the summon succeeds. |
+| `held_count` | no | Integer, 1 to 64, default `1`. How many of the held item are required. |
+| `block` | no | Optional block id string. The block the gesture is performed on. |
+| `biome` | no | Optional string: a biome id, or a `#tag` of biomes. The biome the gesture must happen in. |
+| `block_below` | no | Optional block id string. A block that must lie within three blocks below the host. |
+| `consumed` | no | Boolean, default `true`. Whether the held items are taken on success. |
+| `dimension` | no | Optional dimension id string. The dimension the gesture must happen in. |
+| `held_components` | no | Optional object of data components the held item must carry (partial match). |
+| `entity_size_max` | no | Optional integer. The largest slime size the target may have. Setting any size makes the target a slime. |
+| `entity_size_min` | no | Optional integer. The smallest slime size the target may have. |
+| `soul_cost_bp` | no | Integer, 0 to 10000, default `0`. Soul burned on success, in basis points (hundredths of a percent) of the player's soul total. |
+| `structure` | no | Optional string: a structure id, or a `#tag` of structures. The structure the gesture must happen in. |
+| `cooldown_ticks` | no | Integer, 0 or more, default `0`. For `enter_area`: ticks before the same player can trigger it again. |
+| `crowding_radius` | no | Optional integer, 1 to 256, in blocks. How far around the host another of this mob blocks the summon. Defaults to the mod's configured radius. |
+| `spawn_at` | no | Optional string. Where the mob stands when that is not where the gesture happened. The only accepted value is `village_centre`, which places it over the centre of the structure the gesture happened in. |
+| `passes_click` | no | Boolean, default `false`. When `true` the click that triggered the summon is not cancelled, so the block or entity still reacts, and the gesture may be empty-handed. |
+| `min_y` | no | Optional integer. The lowest Y level, inclusive, at which the gesture works. |
+| `max_y` | no | Optional integer. The highest Y level, inclusive, at which the gesture works. |
+| `requires_discover` | no | Boolean, default `false`. Whether the player must already know the discovery skill. |
+
+## Example
+
+An invented example.
+
+```json
+{
+  "type": "isekubed:mob_summon",
+  "mob": "minecraft:zombie",
+  "trigger": "use_on_block",
+  "block": "minecraft:stone",
+  "held": "minecraft:stick",
+  "held_count": 2,
+  "dimension": "minecraft:overworld",
+  "time": "night",
+  "soul_cost_bp": 50
+}
+```

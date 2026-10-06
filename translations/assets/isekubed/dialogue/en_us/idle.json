@@ -1,0 +1,15 @@
+{
+  "id": "isekubed:dialogue/idle",
+  "duration": 84,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "Oh, you're listening. How novel. Most applicants are halfway through my ribs by now.",
+      "for": 84
+    }
+  ]
+}

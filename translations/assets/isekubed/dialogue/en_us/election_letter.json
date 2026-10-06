@@ -1,0 +1,15 @@
+{
+  "id": "isekubed:dialogue/election_letter",
+  "duration": 120,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "OH! One more thing, since you are heading out now, would you mind delivering this letter?  It is quite overdue.",
+      "for": 120
+    }
+  ]
+}

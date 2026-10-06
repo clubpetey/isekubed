@@ -1,0 +1,99 @@
+{
+  "id": "isekubed:dialogue/election_five",
+  "duration": 1222,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "I'm not permitted to advise you. What follows isn't disclosure, isn't on the file, and if asked I'll say it didn't happen.",
+      "for": 132
+    },
+    {
+      "at": "clip_1+132",
+      "type": "say",
+      "text": "Ten thousand, two hundred and forty people came up those stairs to get to B. Every one of them. Not one came for A.",
+      "for": 144
+    },
+    {
+      "at": "clip_1+276",
+      "type": "say",
+      "text": "Nobody knew about A. You only hear the options if you pass.",
+      "for": 72
+    },
+    {
+      "at": "clip_1+348",
+      "type": "say",
+      "text": "A has always been available, long before me. It is the smart choice.",
+      "for": 78
+    },
+    {
+      "at": "clip_1+426",
+      "type": "say",
+      "text": "I've watched ten thousand people die about forty feet from ever knowing it existed.",
+      "for": 84
+    },
+    {
+      "at": "clip_1+510",
+      "type": "say",
+      "text": "Hmm, there is a third option...",
+      "for": 36
+    },
+    {
+      "at": "clip_1+546",
+      "type": "say",
+      "text": "It isn't on the form, but I know I read it somewhere.",
+      "for": 72
+    },
+    {
+      "at": "clip_1+618",
+      "type": "say",
+      "text": "You may have both elections, full soul and full knowledge.",
+      "for": 60
+    },
+    {
+      "at": "clip_1+678",
+      "type": "say",
+      "text": "But there is a cost, there is always a cost.",
+      "for": 60
+    },
+    {
+      "at": "clip_1+738",
+      "type": "say",
+      "text": "You must take the office, and the office doesn't let go until the backlog is closed. Ten thousand, two hundred and forty files.",
+      "for": 138
+    },
+    {
+      "at": "clip_1+876",
+      "type": "say",
+      "text": "I never had the courage to closed one.",
+      "for": 48
+    },
+    {
+      "at": "clip_1+924",
+      "type": "say",
+      "text": "Now. I'm going to do something I haven't done in eleven thousand years, and I'd like you to note the irregularity.",
+      "for": 126
+    },
+    {
+      "at": "clip_1+1050",
+      "type": "say",
+      "text": "Don't sit down.",
+      "for": 20
+    },
+    {
+      "at": "clip_1+1070",
+      "type": "say",
+      "text": "That's advice. That's actual advice. I'm not permitted to give it and I've given it, I'd appreciate it if you took it.",
+      "for": 132
+    },
+    {
+      "at": "clip_1+1202",
+      "type": "say",
+      "text": "Now... choose.",
+      "for": 20
+    }
+  ]
+}

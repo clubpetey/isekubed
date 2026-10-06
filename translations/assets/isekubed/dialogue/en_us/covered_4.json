@@ -1,0 +1,15 @@
+{
+  "id": "isekubed:dialogue/covered_4",
+  "duration": 42,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "Noted and filed. You'll receive a copy.",
+      "for": 42
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "isekubed:dialogue/election_two",
+  "duration": 438,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "Form Ten-E. The Election.",
+      "for": 24
+    },
+    {
+      "at": "clip_1+24",
+      "type": "say",
+      "text": "It's never been out of the cabinet. Well, I've taken it out. I've looked at it. I've put it back. But that's different.",
+      "for": 138
+    },
+    {
+      "at": "clip_1+162",
+      "type": "say",
+      "text": "'To the Elector.' -- That's you. You're the Elector now. The title comes with nothing.",
+      "for": 90
+    },
+    {
+      "at": "clip_1+252",
+      "type": "say",
+      "text": "Two elections are available. You may take one.",
+      "for": 48
+    },
+    {
+      "at": "clip_1+300",
+      "type": "say",
+      "text": "The election is irrevocable and takes effect immediately upon your indicating it, so please don't indicate anything you aren't prepared to have happen.",
+      "for": 138
+    }
+  ]
+}

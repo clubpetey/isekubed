@@ -1,0 +1,15 @@
+{
+  "id": "isekubed:dialogue/repeat_count_20",
+  "duration": 126,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "You know there's no shame in the ninth tier. It's a perfectly respectable tier. People live well at the ninth tier.",
+      "for": 126
+    }
+  ]
+}

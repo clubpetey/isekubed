@@ -1,0 +1,15 @@
+{
+  "id": "isekubed:dialogue/repeat_count_3",
+  "duration": 60,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "Back already. Wonderful. Truly. I had just finished tidying up.",
+      "for": 60
+    }
+  ]
+}

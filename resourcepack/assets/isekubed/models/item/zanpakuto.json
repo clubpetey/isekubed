@@ -1,0 +1,157 @@
+{
+  "_comment": [
+    "H-viii-b, Q-X4: the Zanpakuto after FFVII's Buster Sword - the owner's own Blockbench model",
+    "(docs/Bankai), converted by ai/tools/gltf_to_obj.py into a sprite's pose (blade up-right,",
+    "thickness along Z) so vanilla's handheld display holds it like an iron sword. flip_v is TRUE:",
+    "glTF UVs already have Minecraft's top-left origin. Nothing in either gate renders a frame;",
+    "the smoke settles the look."
+  ],
+  "loader": "neoforge:obj",
+  "model": "isekubed:models/item/zanpakuto.obj",
+  "flip_v": true,
+  "emissive_ambient": true,
+  "automatic_culling": false,
+  "shade_quads": true,
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "particle": "isekubed:item/zanpakuto"
+  },
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        0,
+        90,
+        35
+      ],
+      "translation": [
+        0,
+        6.95,
+        -0.0
+      ],
+      "scale": [
+        0.85,
+        0.85,
+        0.85
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        0,
+        -90,
+        -35
+      ],
+      "translation": [
+        0,
+        6.95,
+        -0.0
+      ],
+      "scale": [
+        0.85,
+        0.85,
+        0.85
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        90,
+        20
+      ],
+      "translation": [
+        1.13,
+        5.95,
+        -0.15
+      ],
+      "scale": [
+        0.68,
+        0.68,
+        0.68
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        0,
+        -90,
+        -20
+      ],
+      "translation": [
+        1.13,
+        5.95,
+        -0.15
+      ],
+      "scale": [
+        0.68,
+        0.68,
+        0.68
+      ]
+    },
+    "gui": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "ground": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        2,
+        0
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "head": {
+      "rotation": [
+        0,
+        180,
+        0
+      ],
+      "translation": [
+        0,
+        13,
+        7
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    }
+  }
+}

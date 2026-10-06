@@ -1,0 +1,28 @@
+# Turret Targets
+
+Recipe files go in `data/<namespace>/recipe/`, with `"type": "isekubed:turret_target"`.
+
+## Fields
+
+| Field | Always present | Description |
+|---|---|---|
+| `type` | yes | Always `isekubed:turret_target`. |
+| `item` | yes | Ingredient (item id object or `#tag`). The item that, when bound to a turret circle, selects this recipe. |
+| `blocks` | yes | List of block ids and `#block_tags`. The blocks a turret with that item fires at. |
+
+## Example
+
+From the mod: `data/isekubed/recipe/turret_target/axes.json`.
+
+```json
+{
+  "type": "isekubed:turret_target",
+  "item": {
+    "tag": "minecraft:axes"
+  },
+  "blocks": [
+    "#minecraft:logs",
+    "#minecraft:leaves"
+  ]
+}
+```

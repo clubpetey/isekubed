@@ -1,0 +1,15 @@
+{
+  "id": "isekubed:dialogue/committee_4_gardening",
+  "duration": 30,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "04 — It's using the gardening implement.",
+      "for": 30
+    }
+  ]
+}

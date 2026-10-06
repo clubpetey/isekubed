@@ -1,0 +1,15 @@
+{
+  "id": "isekubed:dialogue/committee_11_minute",
+  "duration": 20,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "11 — Minute that.",
+      "for": 20
+    }
+  ]
+}

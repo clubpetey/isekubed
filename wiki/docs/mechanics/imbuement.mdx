@@ -1,0 +1,78 @@
+# Imbuement
+
+Enchanting in Isekubed has no lottery. You pick the enchantment, you pay for it, and you get it. The circles are on the [Imbuement]($circles/imbuement) page. This page is about how the pieces fit.
+
+## Choosing an enchantment
+
+Weapon Imbuement and Armour Imbuement circles (levels I to X) are drawn on a pedestal. The circle's level is the enchantment level you will get. Which enchantment it is comes from the item you pin to the circle.
+
+1. Draw the circle on a pedestal.
+2. Right-click an item onto the circle to pin it. The item is not used up yet, and an empty hand clears the pin. A circle only accepts an item that stands for an enchantment of its own kind, so a weapon circle will not take an armour item.
+3. Put the item you want to enchant on the pedestal.
+4. After a moment one of the pinned item is used up, mana is paid, and the item has the enchantment. The circle is spent.
+
+The pinned item is taken from your inventory first, then from your [storage network]($mechanics/storage). Sulfur, for example, gives Fire Aspect on a sword and Flame on a bow. The in-game Imbuements book lists them all.
+
+The mana is a base price for the enchantment times the level squared, so the top levels cost far more than the lower ones. The circle's owner pays it, from their pool and carried gems, and is told if they are short. An item that already has the enchantment at that level or higher is refused, and so is a new enchantment on an item whose slots are full.
+
+## Past the vanilla caps
+
+Most enchantments go up to level X, but not past it. A few stop lower. The [Enchantments]($enchantments) page lists each one's maximum.
+
+## Material caps
+
+Not every material can carry every enchantment to the top. Each enchantment listed below has a lower cap on ordinary gear, and its **specialist** material reaches the full maximum.
+
+| Enchantment | Cap on other materials | Specialist material |
+|---|---|---|
+| Protection | V | Netherite |
+| Fire Aspect | III | Netherite |
+| Sharpness | VI | Diamond |
+| Smite | VI | Iron |
+| Sweeping Edge | IV | Iron |
+| Bane of Arthropods | VI | Stone |
+| Knockback | III | Wood |
+| Efficiency | VI | Gold |
+| Fortune | IV | Gold |
+| Looting | IV | Gold |
+| Unbreaking | IV | Gold |
+| Thorns | IV | Gold |
+| Blast Protection | V | Gold |
+| Fire Protection | V | Leather |
+| Feather Falling | V | Leather |
+| Frost Walker | III | Leather |
+| Swift Sneak | IV | Leather |
+| Projectile Protection | V | Chainmail |
+| Respiration | IV | Turtle Shell |
+
+The caps hold everywhere: at the imbuing circle, in an anvil, on the enchanting table, in loot and in trades. An enchanted book keeps its level until it is put on an item. A server can switch the caps off with the `enchant_level_caps` config option.
+
+## Enchantment slots
+
+An item holds only so many enchantments. By default the number of slots is the item's vanilla enchantability divided by 2.5, rounded up, and never fewer than 2 or more than 10. Better enchanting materials hold more. A few items have a fixed number:
+
+| Item | Slots |
+|---|---|
+| Shield | 2 |
+| Wooden gear | 3 |
+| Bow, crossbow, fishing rod | 4 |
+| Trident | 6 |
+| Elytra | 8 |
+
+An item with no enchantability and no fixed number cannot be imbued at all. A server can change the divisor with the `enchant_slot_divisor` config option (0.5 to 25).
+
+## Disenchant
+
+[Disenchant]($circles/disenchant) strips enchantments off the items held by the block it is drawn on (a chest or a pedestal), one at a time. Each strip costs the circle's working mana, and pays you back. An enchanted book stripped bare becomes a plain book. What you get depends on what you already know.
+
+- If there is a kind of imbuement you have not learned yet, you learn it. This is how loot becomes knowledge.
+- If you know it, you are paid mana instead: half of what the same enchantment would cost to imbue at that level.
+- An enchantment no imbuement circle covers, such as most from other mods, pays a flat 250 mana.
+
+The mana you earn goes into your mana network. Whatever doesn't fit is lost.
+
+## Permanent potion effects
+
+Self Imbuement makes a potion effect permanent. Drink the potion, then stand on the circle, drawn on the top of a block. The first active effect you have not already imbued is converted, and the circle is used up. It also costs some of your soul.
+
+Three strengths exist: Waking Imbuement (level I), Life Imbuement (level III) and Eternal Imbuement (level VII). A Waking imbuement lasts until you sleep. A Life imbuement lasts until you die. An Eternal imbuement lasts forever. The first two cost a little mana every moment to keep, and Eternal costs nothing. If your mana runs out, the effect lapses after a few seconds and comes back as soon as you can pay again. The imbuement itself is not lost. You can switch an imbuement off and on in the Imbuements screen (**P** by default).

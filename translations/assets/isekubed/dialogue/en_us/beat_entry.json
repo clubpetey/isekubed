@@ -1,0 +1,27 @@
+{
+  "id": "isekubed:dialogue/beat_entry",
+  "duration": 180,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "Threshold alert. Pattern blue — that's you, I'm afraid.",
+      "for": 54
+    },
+    {
+      "at": "clip_1+54",
+      "type": "say",
+      "text": "Blue is applicants. Nothing personal, it's the band you fall in.",
+      "for": 66
+    },
+    {
+      "at": "clip_1+120",
+      "type": "say",
+      "text": "Applicant ten thousand two hundred and forty-one. Do come in.",
+      "for": 60
+    }
+  ]
+}

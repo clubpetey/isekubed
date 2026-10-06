@@ -1,0 +1,36 @@
+# RF Bridge
+
+Tech mods run on RF. Isekubed runs on mana. Two circles join them, so a generator from a tech mod can power your spells and your mana can power a machine. The bridge works with any mod whose blocks give or take RF.
+
+## RF into mana
+
+The RF Split circle turns RF into mana. Draw it on a battery, a generator or a machine that can give energy out, and it drains that block, and every energy source in its reach, into your mana network.
+
+By default, 10,000 RF becomes 901 mana. It is a steady trade, not whole lots. Smaller amounts convert in proportion.
+
+It needs somewhere to put the mana. It never takes more than your network can hold, and a mana gem in a network bag is the smallest network there is.
+
+The circle goes red when nothing in its reach gives energy or your network has no room, and yellow when the batteries in its reach are empty.
+
+### Free sources
+
+Some blocks make RF for an RF Split circle on their own and are not used up:
+
+| Block | RF per tick |
+|---|---|
+| Redstone block | 2 |
+| Ancient debris | 20 |
+
+Put one anywhere in the circle's reach. Several of them add up. The list is data, so a pack can add its own blocks. See [RF Sources]($mechanics/rf-sources) for the format.
+
+## Mana into RF
+
+The RF Merge circle does the reverse. It pushes energy out of your network into whatever is in reach that will accept it, such as batteries and machines. By default 9,001 mana buys 10,000 RF. Any mana it paid for and could not deliver is returned.
+
+Going round the loop keeps about a tenth: 10,000 RF in gives 901 mana, and 901 mana buys about 1,000 RF back.
+
+If nothing in reach will take any RF, the circle goes red. If you can't pay for any, it goes yellow.
+
+## Settings
+
+A server or pack can change the four rates with `rf_in_rf`, `rf_in_mana`, `rf_out_mana` and `rf_out_rf`. See [RF]($circles/rf) for the circle's levels and reach.

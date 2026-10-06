@@ -1,0 +1,15 @@
+{
+  "id": "isekubed:dialogue/lie_heal_1",
+  "duration": 42,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "Hold still. This one's a healing spell.",
+      "for": 42
+    }
+  ]
+}

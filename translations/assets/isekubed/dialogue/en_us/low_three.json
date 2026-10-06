@@ -1,0 +1,15 @@
+{
+  "id": "isekubed:dialogue/low_three",
+  "duration": 114,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "This is fine. This is within acceptable parameters. My hair is on fire and that is a STYLISTIC CHOICE.",
+      "for": 114
+    }
+  ]
+}

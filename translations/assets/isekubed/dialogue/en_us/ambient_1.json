@@ -1,0 +1,15 @@
+{
+  "id": "isekubed:dialogue/ambient_1",
+  "duration": 48,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "Received, stamped, set aside. Received, stamped, set aside.",
+      "for": 48
+    }
+  ]
+}

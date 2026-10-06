@@ -1,0 +1,9 @@
+# The Zanpakuto's one material. Ka 0: nothing on a sword glows (the CAD's lesson - emissive_ambient reads Ka).
+newmtl steel
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.1 0.1 0.1
+Ns 100
+d 1
+illum 2
+map_Kd isekubed:item/zanpakuto

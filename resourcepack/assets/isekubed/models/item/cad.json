@@ -1,0 +1,49 @@
+{
+  "_comment": [
+    "The CAD, G-vii task 3b - the mod's FIRST 3D model. Nothing in either gate renders a frame",
+    "(ai/LESSONS.md L41), so every visual claim here is smoke steps 10-14's to settle.",
+    "flip_v is TRUE because this OBJ's V is bottom-up: with it false, 32% of the faces sample the",
+    "texture's black background instead of its paint. Measured, not assumed.",
+    "automatic_culling is FALSE because it culls quads lying on a block boundary - a block's",
+    "concern. On an item it can only ever punch an invisible hole.",
+    "render_type is cutout because the emissive mask's alpha is 0 or 255 and nothing between.",
+    "The transform brings a mesh authored in 0-16 pixel space onto the block and centres it; the",
+    "rotation puts the muzzle at +X.",
+    "THE HAND ROTATIONS ARE +90, NOT VANILLA HANDHELD'S -90. Vanilla's block item uses",
+    "firstperson_righthand [0,45,0] to show a cube's front AND right faces, which is only true if",
+    "+Z points at the PLAYER in hand space - the same way round as the GUI camera. Ry(-90) would",
+    "therefore send this model's +X muzzle to +Z, straight at the player's face, which is what the",
+    "first smoke round reported. The lefthand entries are the righthand ones with y and z negated,",
+    "because ItemTransform.apply negates them AGAIN at runtime; that is vanilla's own convention.",
+    "Their TRANSLATIONS are identical to the righthand ones on purpose - apply() flips only the sign",
+    "of translation.x for the left hand, so writing the mirror here would mirror it twice.",
+    "The gui and fixed translations and scales are SOLVED by ai/tools/cad_model.py, not typed: the",
+    "model is centred and fitted to its slot, so it cannot bleed into the next one."
+  ],
+  "loader": "neoforge:obj",
+  "model": "isekubed:models/item/cad.obj",
+  "flip_v": true,
+  "emissive_ambient": true,
+  "automatic_culling": false,
+  "shade_quads": true,
+  "render_type": "minecraft:cutout",
+  "transform": {
+    "origin": "corner",
+    "rotation": [0, -90, 0],
+    "scale": 0.03125,
+    "translation": [0.74124, 0.22059, 0.24999]
+  },
+  "textures": {
+    "particle": "isekubed:item/cad_diffuse"
+  },
+  "display": {
+    "thirdperson_righthand": { "rotation": [0, 90, 55], "translation": [-6.0, -6.5, -1.5], "scale": [0.85, 0.85, 0.85] },
+    "thirdperson_lefthand": { "rotation": [0, -90, -55], "translation": [-6.0, -6.5, -1.5], "scale": [0.85, 0.85, 0.85] },
+    "firstperson_righthand": { "rotation": [0, 90, 25], "translation": [-5.27, -3.2, 1.13], "scale": [0.68, 0.68, 0.68] },
+    "firstperson_lefthand": { "rotation": [0, -90, -25], "translation": [-5.27, -3.2, 1.13], "scale": [0.68, 0.68, 0.68] },
+    "gui": { "rotation": [12, -22, 22], "translation": [-1.408, -10.035, 0.0], "scale": [1.2096, 1.2096, 1.2096] },
+    "ground": { "rotation": [0, 0, 0], "translation": [0, 2, 0], "scale": [0.5, 0.5, 0.5] },
+    "fixed": { "rotation": [0, 0, 0], "translation": [-0.0, 0.0, 0.0], "scale": [1.1573, 1.1573, 1.1573] },
+    "head": { "rotation": [0, 90, 0], "translation": [0, 13, 7], "scale": [1, 1, 1] }
+  }
+}

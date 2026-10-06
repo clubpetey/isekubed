@@ -1,0 +1,63 @@
+{
+  "id": "isekubed:dialogue/beat_two",
+  "duration": 614,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "I am Seraphelle.",
+      "for": 20
+    },
+    {
+      "at": "clip_1+20",
+      "type": "say",
+      "text": "Radiant Administrator of the Final Rite, Keeper of the Tenth Schedule,",
+      "for": 66
+    },
+    {
+      "at": "clip_1+86",
+      "type": "say",
+      "text": "and sole approving authority on all magic above the ninth tier within this world and the four adjacent to it.",
+      "for": 120
+    },
+    {
+      "at": "clip_1+206",
+      "type": "say",
+      "text": "I report to Central Schedules. Central Schedules reports to me.",
+      "for": 60
+    },
+    {
+      "at": "clip_1+266",
+      "type": "say",
+      "text": "It's an efficient arrangement and I'd thank you to not look at it too closely.",
+      "for": 90
+    },
+    {
+      "at": "clip_1+356",
+      "type": "say",
+      "text": "I have held this office since before the office had a floor.",
+      "for": 72
+    },
+    {
+      "at": "clip_1+428",
+      "type": "say",
+      "text": "In that time I have received ten thousand, two hundred and forty applications.",
+      "for": 78
+    },
+    {
+      "at": "clip_1+506",
+      "type": "say",
+      "text": "I have approved none of them.",
+      "for": 36
+    },
+    {
+      "at": "clip_1+542",
+      "type": "say",
+      "text": "This is not a policy. It's simply how the numbers have gone.",
+      "for": 72
+    }
+  ]
+}

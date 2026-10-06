@@ -1,0 +1,15 @@
+{
+  "id": "isekubed:dialogue/repeat_two",
+  "duration": 90,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "...I do have to stand here regardless. The charge takes as long as it takes.",
+      "for": 90
+    }
+  ]
+}

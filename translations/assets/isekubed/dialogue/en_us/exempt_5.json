@@ -1,0 +1,15 @@
+{
+  "id": "isekubed:dialogue/exempt_5",
+  "duration": 114,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "The Office of Cultivated Ground will hear about this. They will not respond, but they will hear about it.",
+      "for": 114
+    }
+  ]
+}

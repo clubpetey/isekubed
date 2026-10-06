@@ -1,0 +1,15 @@
+{
+  "id": "isekubed:dialogue/covered_1",
+  "duration": 30,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "...and that's lovely, I'll continue.",
+      "for": 30
+    }
+  ]
+}

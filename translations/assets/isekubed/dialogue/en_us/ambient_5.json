@@ -1,0 +1,15 @@
+{
+  "id": "isekubed:dialogue/ambient_5",
+  "duration": 72,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "Next. ...Next. There's never a next. It's just a thing you say.",
+      "for": 72
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+# The Adventurer's Guild
+
+Villages with a guild hall have a place where adventurers get work, get ranked and get a better deal from every
+villager.
+
+## The hall
+
+Guild halls generate in plains, savanna, taiga, desert and snowy villages. Inside is a **guild desk** and a **guild
+clerk**, a villager whose workstation is the desk.
+
+When a clerk first appears, their level is rolled: level 1 about 35% of the time, then 30%, 20%, 10% and 5% for levels
+2 to 5. A higher level means harder work on the board. Clerks gain levels from the quests you hand in to them.
+
+## Fame and rank
+
+Doing guild work earns **fame**. Fame sets your rank, and rank sets your discount.
+
+| Rank | Fame needed | Fame for a quest of this rank | Villager discount |
+|---|---|---|---|
+| E | 0 | 10 | 10% |
+| D | 100 | 20 | 20% |
+| C | 300 | 40 | 30% |
+| B | 800 | 80 | 50% |
+| A | 2000 | 150 | 70% |
+| S | 5000 | 300 | 90% |
+
+Winning a village raid is worth 200 fame, paid when the Hero of the Village effect arrives. It is paid once per raid.
+
+Fame is yours alone, unless you are on an FTB Teams team. Then every member of the team gets what one of you earns.
+
+## The Adventurer's Permit
+
+The clerk sells an **Adventurer's Permit** for 5 emeralds. It binds to the first player who carries it, so it cannot
+be passed on. Its tooltip shows the owner and the owner's rank, and an S-rank permit glows.
+
+While the owner carries it, every villager's prices drop by the discount for their rank. The discount does not stack
+with Hero of the Village. Whichever is larger applies.
+
+## The quest board
+
+Every dawn, each clerk with a loaded desk posts quest papers. They go into any item frame within 10 blocks of the
+desk that is empty, or whose paper has gone stale. Hang a few frames around the hall and you have a board.
+
+- A level 1 clerk posts quests up to rank D, and each level adds a rank, up to S at level 5. A clerk favours
+  ranks close to that top rank.
+- A paper goes stale after 3 days and is replaced at the next dawn.
+- The first player to carry a paper claims it. Nobody else can hand it in.
+- A paper tells you what it asks. Statistic quests, such as kills, count from the moment you claim the paper. Delivery
+  quests count what you carry in your main inventory, and only undamaged items count.
+- You can hand in quests up to **one rank above your own**. A paper that is too high tells you what rank it needs.
+
+To hand a quest in, right-click the clerk with the paper in your hand. You are paid in fame, not items. The clerk gains
+experience from the job, so busy clerks level up.
+
+If a claimed paper has been put back in a frame and goes stale, the frame drops it as an item when it is refreshed.
+
+## For pack makers
+
+Quests are datapack files in `data/isekubed/guild_quests/`. The file name is the quest's id.
+
+| Field | Meaning |
+|---|---|
+| `description` | The text on the paper. A language key or plain text. `%s` is replaced by the amount |
+| `rank` | `E`, `D`, `C`, `B`, `A` or `S` |
+| `type` | `stat` or `deliver` |
+| `task`, `task_param` | For `stat` only: a statistic type and what it is about |
+| `item` or `tag` | For `deliver` only: exactly one of them |
+| `task_qty` | One amount, or `[min, max]`. Each paper rolls its own. 1 to 3456 |
+| `weight` | Optional. How often it is picked. Default 1. 0 means never posted |
+
+A `stat` quest names `task` and `task_param`, and neither `item` nor `tag`. A `deliver` quest is the opposite.
+
+An invented example, a kill quest:
+
+```json
+{
+  "description": "Put down %s drowned",
+  "rank": "D",
+  "type": "stat",
+  "task": "minecraft:killed",
+  "task_param": "minecraft:drowned",
+  "task_qty": [8, 16]
+}
+```
+
+And a delivery quest:
+
+```json
+{
+  "description": "The kitchen needs %s cod",
+  "rank": "E",
+  "type": "deliver",
+  "item": "minecraft:cod",
+  "task_qty": 12,
+  "weight": 3
+}
+```
+
+Admins can read or set a player's fame with `/ik guild fame <player> [amount]`.

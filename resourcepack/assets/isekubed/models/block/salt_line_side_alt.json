@@ -1,0 +1,24 @@
+{
+    "render_type": "minecraft:cutout",
+    "ambientocclusion": false,
+    "textures": {
+        "particle": "isekubed:block/salt_line_dot",
+        "overlay": "isekubed:block/salt_line_overlay"
+    },
+    "elements": [
+        {   "from": [ 0, 0.25, 8 ],
+            "to": [ 16, 0.25, 16 ],
+            "shade": false,
+            "faces": {
+                "up": { "uv": [ 0, 8, 16, 16 ], "texture": "#line" }
+            }
+        },
+        {   "from": [ 0, 0.25, 8 ],
+            "to": [ 16, 0.25, 16 ],
+            "shade": false,
+            "faces": {
+                "up": { "uv": [ 0, 8, 16, 16 ], "texture": "#overlay" }
+            }
+        }
+    ]
+}

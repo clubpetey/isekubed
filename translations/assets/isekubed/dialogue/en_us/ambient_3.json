@@ -1,0 +1,15 @@
+{
+  "id": "isekubed:dialogue/ambient_3",
+  "duration": 84,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "Somebody ought to dust the frieze. Somebody ought to do a great many things.",
+      "for": 84
+    }
+  ]
+}

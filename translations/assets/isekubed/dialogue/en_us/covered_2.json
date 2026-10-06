@@ -1,0 +1,15 @@
+{
+  "id": "isekubed:dialogue/covered_2",
+  "duration": 42,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "You've brought a registered implement I see.",
+      "for": 42
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+# Commands and Config
+
+For server admins and pack makers. Every command not marked Anyone needs operator level 2. Every key below is a server config setting.
+
+## Commands
+
+All of them start with `/ik`.
+
+| Command | Who | What it does |
+|---|---|---|
+| `mana` | Anyone | Shows your pool, the charge in the gems you carry and the total |
+| `mana refill` | Op | Refills your pool and the gems in your hands |
+| `mana empty` | Op | Empties your pool |
+| `learn` | Anyone | Lists the glyphs and words you know and how well you have mastered them |
+| `learn grant glyph <id>`, `learn grant word <text>`, `learn grant all` | Op | Teaches glyphs and words |
+| `learn master word <words>`, `learn master <id>` | Op | Marks them as mastered |
+| `soul`, `soul get` | Op | Shows your soul, tier and what you have sacrificed. Soul is hidden from players, so this is the only way to read it |
+| `soul set <amount>` | Op | Sets your soul. Setting it to 0 runs the reset |
+| `soul progress`, `soul forged <true/false>`, `soul earn ...`, `soul trial ...`, `soul bind ...` | Op | Test tools for the soul economy |
+| `guild fame <player> [amount]` | Op | Shows or sets a player's guild fame |
+| `blackhole balance [player]` | Op | Shows a player's stored Black Hole mana |
+| `blackhole give [player]` | Op | Gives a Black Hole bound to that player |
+| `domain show`, `domain add <mob> <count>`, `domain remove <mob>` | Op | Shows or edits the mobs banked in your domain |
+| `trial where [player]`, `trial reset <player>` | Op | Shows where a player's arena is, or clears their trial |
+| `temple enter [player]`, `temple reset [player]`, `temple where [player]` | Op | Moves players in and out of the temple and resets what it remembers |
+| `ritual why` | Op | Explains why a ritual did not fire for the items near you |
+| `vfx ...` | Op | Plays and lists visual effects |
+| `debug ...`, `dumpruntree`, `seraphelle ...`, `temple lay`, `temple deal`, `trial place`, `trial relay` | Op | Developer tools. Spoilers and not for live servers |
+| `cad render [x y z]`, `gui infobox [width height]` | Anyone | Client-side tuning: where a held CAD is drawn, and the size of the Eye's info box |
+
+## Config keys
+
+Defaults in brackets.
+
+### Mana
+
+| Key | Meaning |
+|---|---|
+| `player_pool_cap` (2000) | Starting size of a new player's mana pool |
+| `gem_capacity` (100000) | What a newly made Mana Gem holds |
+| `batch_ticks` (20) | How often circles pay upkeep and pedestals harvest |
+| `mana_cast_percent`, `mana_upkeep_percent`, `mana_working_percent` (100 each) | Scale every circle's costs |
+| `cast_open_cost` (100) | Cost of opening the casting screen |
+| `stone_rebate` (true) | Whether the Philosopher's Stone discounts mana |
+| `mana_block_conversion_cost` (10000) | Mana to turn a circle's block into a Mana Block |
+| `circle_work_cap_per_batch` (64) | The most work one circle does in a batch |
+| `repair_mana_per_point` (4), `repair_unassisted_multiplier` (2) | Repair circle costs |
+| `xp_transfer_rate` (400) | Experience an XP circle moves per batch |
+
+### Pedestal harvest
+
+| Key | Meaning |
+|---|---|
+| `harvest_radius` (8) | How far a pedestal looks |
+| `harvest_points_crop` (1) | Points per crop |
+| `harvest_points_living` (8) | Points per living mob |
+| `harvest_points_enderman` (64) | Points per mana-rich mob |
+| `harvest_points_verdant_biome` (4), `harvest_points_fertile_biome` (1), `harvest_points_untagged_biome` (0) | Points per batch from the biome |
+| `harvest_crop_cap_factor` (8), `harvest_entity_cap_factor` (2) | Most crops and mobs counted, as a multiple of the radius |
+
+### RF bridge
+
+| Key | Meaning |
+|---|---|
+| `rf_in_rf` (10000), `rf_in_mana` (901) | An RF SPLIT circle takes in `rf_in_rf` RF for every `rf_in_mana` mana made |
+| `rf_out_mana` (9001), `rf_out_rf` (10000) | An RF MERGE circle spends `rf_out_mana` mana for every `rf_out_rf` RF put out |
+
+### Storage
+
+| Key | Meaning |
+|---|---|
+| `bag_rows` (6) | Rows of nine slots in a Bag of Holding, up to 28 |
+| `bag_magnet_radius` (4) | How far the Magnet pulls |
+| `bag_auto_suck_all` (true) | Whether the Magnet takes every item or only types the bag holds |
+| `tank_mb_per_block` (8000), `tank_run_cap` (64) | Fluid tank size |
+
+### Soul
+
+| Key | Meaning |
+|---|---|
+| `soul_total` (2000) | Total soul. Every soul cost is a share of this |
+| `soul_cast_failure_percent` (5) | Chance a cast fails outright in the Voices tier and below |
+| `soul_effect_batch_ticks` (20) | How often low-soul effects are applied |
+| `soul_weird_radius` (6.5) | How far Weird-tier events can reach |
+| `soul_voices_period_ticks` (4800), `soul_weird_period_ticks` (1200), `soul_curse_period_ticks` (12000) | Ticks between effects in each tier |
+| `soul_curse_duration_ticks` (1200) | How long one curse lasts |
+| `soul_whisper_volume_percent` (15) | Whisper volume |
+
+### Villagers and guild
+
+| Key | Meaning |
+|---|---|
+| `disable_cure_discount` (false) | When true, curing a zombie villager no longer lowers its prices. Trading still counts |
+
+### Enchanting and spells
+
+| Key | Meaning |
+|---|---|
+| `enchant_slot_divisor` (2.5) | Enchantment slots are enchantability divided by this, rounded up, between 2 and 10 |
+| `spells_break_blocks` (true) | Whether exploding spells destroy blocks |
+| `explain_cast_failures` (false) | Whether a failed cast says why on the action bar |
+| `mastery_threshold` (8) | Correct draws before a glyph can be typed |
+| `workshop_max_volume` (512) | Most air blocks a room may hold and still be a workshop |
+
+### The Trial, the temple and bosses
+
+| Key | Meaning |
+|---|---|
+| `mirror_health_multiplier` (1.5) | The mirror's health as a multiple of yours |
+| `mirror_charge_ticks` (220) | How long the mirror charges before the fight |
+| `black_hole_lift_grade` (C) | Lowest Stone grade that can lift a Black Hole |
+| `bankai_soul_per_level` (2) | Soul per Zanpakutō swing, per level above the first |
+| `minecart_door_speed_centiblocks` (38) | Cart speed that carries a player into the temple |
+| `temple_mob_cap` (32), `temple_mob_total` (128) | Most captured mobs around one player and in the whole temple |
+
+Boss and teacher stats have keys of their own, such as `teacher_follow_range`. Stand strengths per grade are the
+`stand_*` lists.

@@ -1,0 +1,27 @@
+# Entity Smelting
+
+Recipe files go in `data/<namespace>/recipe/`, with `"type": "isekubed:smelt_entity"`.
+
+## Fields
+
+| Field | Always present | Description |
+|---|---|---|
+| `type` | yes | Always `isekubed:smelt_entity`. |
+| `entity` | yes | Entity type id string. The mob that is converted. The mob is transmuted, not killed, so it drops nothing else. |
+| `min_level` | yes | Integer, default `1`. The lowest smelting circle level that can convert it. |
+| `result` | yes | Item stack object (`id`, optional `count`, optional `components`). What it becomes. |
+
+## Example
+
+From the mod: `data/isekubed/recipe/smelt_axolotl.json`.
+
+```json
+{
+  "type": "isekubed:smelt_entity",
+  "entity": "minecraft:axolotl",
+  "min_level": 3,
+  "result": {
+    "id": "minecraft:axolotl_spawn_egg"
+  }
+}
+```

@@ -1,0 +1,36 @@
+# Storage
+
+Isekubed has no storage CPUs and no wiring diagram. You draw a circle on a chest, and the chest is part of your storage. Everything you have marked acts as one pool, and every circle that takes or gives items works against it.
+
+## Your network
+
+The [Store]($circles/store) circle puts an inventory into your network. Draw it on a chest, a barrel or any other block that holds items, and its contents are yours to pull from. A circle covers the blocks under it, so a bigger one marks every inventory in its reach with a single drawing.
+
+- **It is yours.** The network is made of the circles you drew. Nobody else's chests are in it, and yours are in nobody else's.
+- **It is per dimension.** Only marked inventories in loaded chunks of the dimension you are working in take part.
+- **Pausing a circle takes its chests out.** A Store circle held off by redstone adds nothing to the network until it runs again.
+- **Pedestals count.** An item resting on a pedestal carrying a Store circle is part of the network too.
+- **Mana gems in a marked inventory** also feed your circles with mana. See [Store]($circles/store).
+
+## Tanks
+
+Draw the same circle on glass and you have a tank. Fluids and gases go into it, and connected glass of the same kind joins into one bigger tank. Other blocks that hold fluid can join the network the same way when a Store circle covers them. Cauldrons are the exception: the network never reads one, so a brew is never drained from under you.
+
+## Putting things in and taking them out
+
+Two circles move things in and out of the network.
+
+- [Split]($circles/split) puts things into the network. Items resting on it go in, and on a chest, cauldron or machine it drains the contents. It also harvests crops, trees and beehives for you.
+- [Merge]($circles/merge) takes things out. Right-click an item onto it to set a filter, and it pulls that item out of the network into the inventory it is drawn on.
+
+Items go into the first marked inventory with room, in a fixed order, topping up partial stacks before starting new ones.
+
+## Crafting from the network
+
+A [Craft]($circles/craft) circle with a recipe bound to it takes its ingredients from the items dropped on it or, when those can't fill a batch, straight from your network. A Bag of Holding with the Network feature gives you the same pool on the go. See [Bags]($mechanics/bags).
+
+## Unlimited storage
+
+Chests fill up. The network does not have to. Winning the [Trial]($mechanics/trial) leaves a Black Hole where you return. Lift it with a Philosopher's Stone and you can make an unlimited store: a Black Hole bound to you, resting on a pedestal, takes in every new item before any chest does, and it has no limit on how much or on how many kinds. It only works while its pedestal is loaded.
+
+Two Black Holes bound to you on one pedestal form a twin, and a twin holds unlimited mana.

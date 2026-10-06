@@ -1,0 +1,42 @@
+# The Trial of Yourself
+
+Somewhere in the world there is a door to a dimension that belongs to you alone. Inside, you fight yourself.
+
+A way in exists. This wiki does not say what it is.
+
+## The mirror
+
+The Trial puts you in an arena of your own, facing a mirror. The mirror is a perfect copy of you at the moment you
+walked in.
+
+- It wears the armour you wore, and carries your best sword and what you held in your off hand.
+- It casts the spells loaded in your CAD, but only the ones you actually know.
+- It has your imbuements and some of the effects you had active.
+- Its health is your base maximum health multiplied by 1.5 by default (`mirror_health_multiplier`).
+- It charges up first, untouchable, for about eleven seconds by default (`mirror_charge_ticks`).
+
+Only you can finish it, with your own blows or your own projectiles. Anything else stops at its last point of health, so the kill is always yours, and so
+is the win.
+
+## Losing
+
+If you fall, you do not die. You are sent back to where you came in, healed, and can try again. When you return, a new
+mirror is copied from you as you are then.
+
+## Winning
+
+Winning leaves you a **Black Hole** beside where you entered, and gives you a Mana Star.
+
+A Black Hole is unlimited storage. Lift the block with a Philosopher's Stone of grade C or better (`black_hole_lift_grade`)
+and it becomes an item bound to you. Doing it burns your soul down to 8%, and is refused if you are already at 8% or below. See [Soul]($mechanics/soul).
+
+- Put it on a pedestal and the pedestal opens an unlimited item store on your network.
+- Put two of yours on one pedestal, as twins, and your network also gets a balance of mana with no practical limit. See
+  [Mana]($mechanics/mana).
+
+After you have won, stepping into your Black Hole takes you back to your arena.
+
+## Zanpakutō
+
+The Trial is also where you forge a Zanpakutō of your own. It is a sword that is yours alone, and it grows with you.
+Each hit with it costs soul, 2 points per level above the first by default (`bankai_soul_per_level`).

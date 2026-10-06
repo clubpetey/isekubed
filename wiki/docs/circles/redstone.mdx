@@ -1,0 +1,50 @@
+# Redstone
+
+Circles that read or write redstone signals. Most use a bound item, set by right-clicking it onto the circle, as their setting. Higher levels generally widen the reach or range; the table below has the mana for each.
+
+- **Redstone Mana** gives out a signal from 0 to 15 for how full your mana network is. It only works on a mana block. Bind a Mana Gem to set what a full signal means.
+- **Redstone Timer** pulses on a schedule: bind redstone for ticks, sugar for seconds or glowstone dust for minutes, with the stack size as the count. Level 1 pulses the block it is on. Level 2 and up pulse every block that can carry a signal in the disc around it. With nothing bound it does nothing.
+- **Redstone Sensor** counts what is in the same area a [Trap]($circles/trap) of its level covers and outputs 0 to 15. With nothing bound it counts every living thing, players included. Bind armor to count players, a sword for hostile mobs, an egg for peaceful animals, an emerald for villagers, or an item a mob drops for that mob. Any other item counts dropped items of that kind; a block counts nothing.
+- **Redstone AoE** is the sensor made into a pressure-plate field: the block under each match outputs 15 instead of the circle's host.
+- **Redstone Link** carries a signal between circles. Links bound to the same item are one wire. The block it sits on is the input and the other five faces are the output. Level 1 hears its own dimension, level 2 hears every dimension.
+- **Redstone Latch** is a toggle. Each rising signal on the input flips the output on or off, and it remembers its state across restarts. Green is on, yellow is off.
+- **Redstone Counter** is a pulse divider: every Nth rising signal makes one pulse, where N is the size of the bound stack (nothing bound means 1).
+- **Redstone Stock** reads how much of the bound item your storage network holds, from 0 to 15. The stack size is the amount that counts as full. Cast on a chest that is not in the network, it reads that chest alone.
+
+Any circle can also be paused to save mana: a lever, button, torch, repeater or other redstone component powering the block it is drawn on stops it, and a paused circle costs nothing. Plain redstone dust running into the block does not pause it.
+
+| Circle | Mana (cast) | Mana upkeep (per batch) |
+|---|---|---|
+| Redstone Mana I | 200 | 1 |
+| Redstone Timer I | 200 | 2 |
+| Redstone Timer II | 200 | 4 |
+| Redstone Timer III | 200 | 6 |
+| Redstone Timer IV | 200 | 8 |
+| Redstone Timer V | 200 | 10 |
+| Redstone Timer VI | 200 | 12 |
+| Redstone Timer VII | 200 | 14 |
+| Redstone Timer VIII | 200 | 16 |
+| Redstone Timer IX | 200 | 18 |
+| Redstone Sensor I | 200 | 2 |
+| Redstone Sensor II | 200 | 4 |
+| Redstone Sensor III | 200 | 6 |
+| Redstone Sensor IV | 200 | 8 |
+| Redstone Sensor V | 200 | 10 |
+| Redstone Sensor VI | 200 | 12 |
+| Redstone Sensor VII | 200 | 14 |
+| Redstone Sensor VIII | 200 | 16 |
+| Redstone Sensor IX | 200 | 18 |
+| Redstone AoE I | 200 | 2 |
+| Redstone AoE II | 200 | 4 |
+| Redstone AoE III | 200 | 6 |
+| Redstone AoE IV | 200 | 8 |
+| Redstone AoE V | 200 | 10 |
+| Redstone AoE VI | 200 | 12 |
+| Redstone AoE VII | 200 | 14 |
+| Redstone AoE VIII | 200 | 16 |
+| Redstone AoE IX | 200 | 18 |
+| Redstone Link I | 200 | 1 |
+| Redstone Link II | 200 | 2 |
+| Redstone Latch I | 200 | 1 |
+| Redstone Counter I | 200 | 1 |
+| Redstone Stock I | 200 | 1 |

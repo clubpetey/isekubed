@@ -1,0 +1,33 @@
+{
+  "id": "isekubed:dialogue/beat_six",
+  "duration": 188,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "...There. Wonderful.",
+      "for": 20
+    },
+    {
+      "at": "clip_1+20",
+      "type": "say",
+      "text": "Your file is open — and I'll note, for the record, that coverage now attaches in full.",
+      "for": 102
+    },
+    {
+      "at": "clip_1+122",
+      "type": "say",
+      "text": "You may put your gardening tools away.",
+      "for": 42
+    },
+    {
+      "at": "clip_1+164",
+      "type": "say",
+      "text": "Let's begin your review.",
+      "for": 24
+    }
+  ]
+}

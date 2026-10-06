@@ -1,0 +1,15 @@
+{
+  "id": "isekubed:dialogue/repeat_count_2",
+  "duration": 30,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "So... How have you been?",
+      "for": 30
+    }
+  ]
+}

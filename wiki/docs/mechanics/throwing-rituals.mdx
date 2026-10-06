@@ -1,0 +1,42 @@
+# Throwing Rituals
+
+Recipe files go in `data/<namespace>/recipe/`, with `"type": "isekubed:ritual_throw"`.
+
+## Fields
+
+| Field | Always present | Description |
+|---|---|---|
+| `type` | yes | Always `isekubed:ritual_throw`. |
+| `inputs` | yes | List of inputs. Each entry is either a bare ingredient (an item id string, an ingredient object, or a `#tag`) or an object with `item` (item id, ingredient or tag), optional `components` (partial data-component match), optional `consumed` (boolean, default `true`; `false` makes the input a catalyst that must be present but is kept) and optional `ink` (positive integer: ink a magic pen must hold to match, drained on completion). The first entry is the thrown subject and cannot be a catalyst. |
+| `circle` | no | Optional circle id. When present the block the item lands on must carry that circle. |
+| `input_count` | no | Integer, default `1`. How many of the thrown item one output costs. |
+| `output` | no | Item stack object (`id`, optional `count`, optional `components`). Optional, default empty; a recipe that uses `carry` may omit it. |
+| `duration` | yes | Integer, in ticks. How long the item must lie on the circle before the ritual completes. |
+| `carry` | no | Optional object that copies data from an input onto the output: `input` (integer index into `inputs`), optional `merge` (a data-component patch applied to the output) and optional `copy_from` (object with `input`, an index, and `components`, a list of component type ids to copy across). |
+| `stamp_level` | no | Boolean, default `false`. When `true` the output records the level of the circle the ritual ran on in its item-level component. |
+| `bind_output_to_payer` | no | Boolean, default `false`. When `true` the output is bound to whoever paid the ritual, so the soul pickup rule applies to it. |
+| `soul_toll` | no | Optional object `{ "to_tier": <tier name>, "into_tier_bp": <integer, at least 1> }`. Charges the payer by bringing their soul down to a position inside the named tier, given in basis points (hundredths of a percent) of that tier. Omit to charge no soul. |
+| `block` | no | Optional block state (`{ "Name": "minecraft:stone" }`, with optional `Properties`). When present the host block must match it. Usually omitted because the circle is the requirement. |
+| `multiplier` | no | Integer, default `1`. A ritual costs its `duration` times the circle's working mana cost; this multiplies that. |
+| `sound` | no | Optional sound event id played at the block when the ritual completes. |
+
+## Example
+
+From the mod: `data/isekubed/recipe/ritual/bone_block_to_ancient_debris.json`. Circle ids are shown as `isekubed:example_circle`.
+
+```json
+{
+  "type": "isekubed:ritual_throw",
+  "inputs": [
+    {
+      "item": "minecraft:bone_block"
+    }
+  ],
+  "circle": "isekubed:example_circle",
+  "input_count": 64,
+  "output": {
+    "id": "minecraft:ancient_debris"
+  },
+  "duration": 600
+}
+```

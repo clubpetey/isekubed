@@ -1,0 +1,15 @@
+{
+  "id": "isekubed:dialogue/committee_2_worship",
+  "duration": 60,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "02 — Has it considered worship instead? The benefits package is competitive.",
+      "for": 60
+    }
+  ]
+}

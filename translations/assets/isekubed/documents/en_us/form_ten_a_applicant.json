@@ -1,0 +1,27 @@
+{
+  "_comment": "I-vii-b, Q-R77: the Administrator's own Form 10-A, in their name ({0}). A DRAFT for the owner to rewrite; her own form_ten_a.json is its model. Markup: **bold**, *italic*, ~~struck~~.",
+  "names": [
+    "Applicant"
+  ],
+  "pages": [
+    [
+      "**FORM 10-A**",
+      "APPLICATION FOR ASCENSION",
+      "TENTH SCHEDULE",
+      "APPLICANT: {0}",
+      "TIER HELD: Ninth",
+      "SPONSOR: Seraphelle, Administrator (outgoing)",
+      "REASON FOR APPLICATION *(be brief)*:",
+      "*I wanted to know how it ends.*"
+    ],
+    [
+      "ASSESSMENT RESULT: **PASSED**",
+      "ADMINISTRATOR: {0}",
+      "ELECTION INDICATED:",
+      "~~A~~ ☐    ~~B~~ ☐    **C** ☒"
+    ],
+    [
+      "*Not for filing. The last slot is yours, and it stays empty while you are alive.*"
+    ]
+  ]
+}

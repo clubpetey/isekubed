@@ -1,0 +1,15 @@
+{
+  "id": "isekubed:dialogue/repeat_count_8",
+  "duration": 72,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "I'm told persistence is a virtue. I'm told a great many things.",
+      "for": 72
+    }
+  ]
+}

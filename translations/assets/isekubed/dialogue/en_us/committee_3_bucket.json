@@ -1,0 +1,15 @@
+{
+  "id": "isekubed:dialogue/committee_3_bucket",
+  "duration": 90,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "03 — Most applicants bring a party. A cleric, perhaps. Someone charming. This one brought a bucket.",
+      "for": 90
+    }
+  ]
+}

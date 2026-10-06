@@ -1,0 +1,15 @@
+{
+  "id": "isekubed:dialogue/ambient_last",
+  "duration": 72,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "They all had names. I kept twelve. I'm sorry it wasn't more.",
+      "for": 72
+    }
+  ]
+}

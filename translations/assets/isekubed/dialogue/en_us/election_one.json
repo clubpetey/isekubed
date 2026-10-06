@@ -1,0 +1,45 @@
+{
+  "id": "isekubed:dialogue/election_one",
+  "duration": 358,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "...Oh.",
+      "for": 20
+    },
+    {
+      "at": "clip_1+20",
+      "type": "say",
+      "text": "Oh, there it is.",
+      "for": 24
+    },
+    {
+      "at": "clip_1+44",
+      "type": "say",
+      "text": "You've passed.",
+      "for": 20
+    },
+    {
+      "at": "clip_1+64",
+      "type": "say",
+      "text": "I'd like a moment. I'm entitled to one, it's in the appendix. Nobody's ever needed it though.",
+      "for": 102
+    },
+    {
+      "at": "clip_1+166",
+      "type": "say",
+      "text": "ten thousand, two hundred and forty. And then you.",
+      "for": 54
+    },
+    {
+      "at": "clip_1+220",
+      "type": "say",
+      "text": "I want the record to show I read it correctly the first time. That matters to me. It won't matter to anybody else.",
+      "for": 138
+    }
+  ]
+}

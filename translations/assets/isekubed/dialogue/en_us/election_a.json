@@ -1,0 +1,51 @@
+{
+  "id": "isekubed:dialogue/election_a",
+  "duration": 314,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "...A.",
+      "for": 20
+    },
+    {
+      "at": "clip_1+20",
+      "type": "say",
+      "text": "You picked A.",
+      "for": 20
+    },
+    {
+      "at": "clip_1+40",
+      "type": "say",
+      "text": "Nobody picks A.",
+      "for": 20
+    },
+    {
+      "at": "clip_1+60",
+      "type": "say",
+      "text": "Right. Well. File's closed, you're whole, there's a door or a circle here somewhere.",
+      "for": 84
+    },
+    {
+      "at": "clip_1+144",
+      "type": "say",
+      "text": "You should go now. Quickly, if you don't mind — there's a bit of procedure left and it isn't for visitors.",
+      "for": 126
+    },
+    {
+      "at": "clip_1+270",
+      "type": "say",
+      "text": "And... no. Never mind.",
+      "for": 24
+    },
+    {
+      "at": "clip_1+294",
+      "type": "say",
+      "text": "Off you go.",
+      "for": 20
+    }
+  ]
+}

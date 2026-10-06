@@ -1,0 +1,15 @@
+{
+  "id": "isekubed:dialogue/committee_10_concept",
+  "duration": 84,
+  "markers": {
+    "clip_1": 0
+  },
+  "cues": [
+    {
+      "at": "clip_1",
+      "type": "say",
+      "text": "10 — It's swinging at a concept. Someone should tell it before it tires itself out.",
+      "for": 84
+    }
+  ]
+}
