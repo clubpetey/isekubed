@@ -19,38 +19,31 @@ Recipe files go in `data/<namespace>/recipe/`, with `"type": "isekubed:cauldron_
 
 ## Example
 
-From the mod: `data/isekubed/recipe/cauldron_grade_a.json`. Circle ids are shown as `isekubed:example_circle`.
+An invented example.
 
 ```json
 {
   "type": "isekubed:cauldron_ritual",
   "base": {
-    "item": "isekubed:sulfur",
-    "minimum": 128,
-    "spread": 128
+    "item": "minecraft:redstone",
+    "minimum": 16,
+    "spread": 16
   },
-  "paired": "isekubed:mercury",
+  "paired": "minecraft:glowstone_dust",
   "ratio": {
-    "numerator": 1618,
-    "denominator": 1000
+    "numerator": 2,
+    "denominator": 1
   },
   "hues": {
-    "target_hue": -29670,
-    "base_hue": -7697860,
-    "paired_hue": -6577237
+    "target_hue": -16776961,
+    "base_hue": -65536,
+    "paired_hue": -256
   },
   "circle": "isekubed:example_circle",
-  "circle_level": 8,
-  "input": "isekubed:philosophers_stone",
-  "input_components": {
-    "isekubed:stone_grade": "b"
-  },
+  "circle_level": 2,
+  "input": "minecraft:iron_ingot",
   "output": {
-    "id": "isekubed:philosophers_stone",
-    "components": {
-      "isekubed:stone_grade": "a",
-      "isekubed:purity": 0
-    }
+    "id": "minecraft:gold_ingot"
   }
 }
 ```
