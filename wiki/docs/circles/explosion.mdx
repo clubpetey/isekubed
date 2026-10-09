@@ -1,18 +1,18 @@
 # Explosion
 
-Detonates an explosion at the spot you aim at. The level sets the strength of the blast and nothing else: level II is as strong as a block of TNT and level X is five times that, while the mana cost is the same at every level. The radius figure in the table is that strength on vanilla's scale, where TNT is 4.
+Sets off a ripple of TNT around the spot you aim at. A spinning circle marks the whole blast area and charges for two and a half seconds, which gives anyone inside it time to run. Then the first blast lands where you aimed, and the rest roll outward across the circle over two seconds. Each one sits on the ground where it lands and digs about as deep as the table says, even through stone, so the result is a wide crater. Obsidian and other blocks tougher than stone resist it as they would resist TNT.
 
-It hurts you if you are standing in it, so aim further away. Whether it breaks blocks is a server setting; mobs and players are hurt and thrown either way. Costs soul.
+Every blast is one TNT. Anything caught in the ripple is thrown by each blast that reaches it and hurt like TNT, but a mob or player hit twice within half a second only takes the harder hit, so standing in it is far worse than 100 TNT at once only in how far it throws you. Armour and Blast Protection work as normal. You are not spared if you are standing in it, so aim further away. Whether it breaks blocks is a server setting; mobs and players are hurt and thrown either way. Level X is a big step up from IX. The mana cost is the same at every level. Costs soul.
 
-| Circle | Mana (cast) | Soul (cast) | Radius (blocks) |
-|---|---|---|---|
-| Explosion I | 5000 | 1 | 2 |
-| Explosion II | 5000 | 2 | 4 |
-| Explosion III | 5000 | 3 | 6 |
-| Explosion IV | 5000 | 4 | 8 |
-| Explosion V | 5000 | 5 | 10 |
-| Explosion VI | 5000 | 6 | 12 |
-| Explosion VII | 5000 | 7 | 14 |
-| Explosion VIII | 5000 | 8 | 16 |
-| Explosion IX | 5000 | 9 | 18 |
-| Explosion X | 5000 | 10 | 20 |
+| Circle | Mana (cast) | Soul (cast) | Radius (blocks) | Depth (blocks) | Count |
+|---|---|---|---|---|---|
+| Explosion I | 5000 | 1 | 8 | 2 | 4 |
+| Explosion II | 5000 | 2 | 10.75 | 2.75 | 7 |
+| Explosion III | 5000 | 3 | 13.5 | 3.5 | 12 |
+| Explosion IV | 5000 | 4 | 16.25 | 4.25 | 19 |
+| Explosion V | 5000 | 5 | 19 | 5 | 28 |
+| Explosion VI | 5000 | 6 | 21.75 | 5.75 | 39 |
+| Explosion VII | 5000 | 7 | 24.5 | 6.5 | 52 |
+| Explosion VIII | 5000 | 8 | 27.25 | 7.25 | 67 |
+| Explosion IX | 5000 | 9 | 30 | 8 | 84 |
+| Explosion X | 5000 | 10 | 42 | 12 | 100 |

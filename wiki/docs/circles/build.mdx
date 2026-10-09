@@ -1,11 +1,25 @@
 # Build
 
-A hand-held block placer. This circle is never drawn on a wall: you load it into a CAD, and firing the CAD places one block, picked at random from the blocks on your hotbar, against the face you aim at. Think of it as the reverse of the mine spell.
+A hand-held builder. You load it into a CAD and fire; it builds with the blocks on your hotbar, picked at random and weighted by stack size, taking each block from your inventory first so your hotbar palette stays full.
 
-To copy a whole structure and build it again somewhere else, use [Blueprint]($circles/blueprint) instead.
+- **Build Block** places one block against the face you aim at.
+- **Build Line, Wall, Box, Stairs, Disk and Dome** take two shots. The first plants a small anchor circle; while your CAD has that level selected, a white box shows what the second shot will fill. Fire again at a block, or into the air, to build a **line**, a **wall or floor** (always flat), a **hollow box**, **a flight of stairs** as wide as your two corners, a **disk** or a **dome**. The first shot costs the mana; the second is free.
+- **Right-click the anchor** to turn it light blue: the second shot then **carves** the shape out instead, and the blocks go to your inventory. Press the cast key on an anchor to remove it.
+- **Build Vein** replaces a whole vein of one block with your hotbar blocks, the mined blocks going to your inventory.
+- **Build Flood** fills the hole or pond you aim at from the bottom up.
+- **Build Shelter** seals you inside a 5x5x5 box of crying obsidian, no obsidian needed. Crying obsidian stands up to withers and explosions.
 
-It is a single level, and it costs mana each time you fire it.
+Every shot changes at most 512 blocks. To copy a whole structure and build it again somewhere else, use [Blueprint]($circles/blueprint) instead.
 
-| Circle | Mana (cast) |
-|---|---|
-| Build I | 200 |
+| Circle | Mana (cast) | Shape |
+|---|---|---|
+| Build Block | 200 | block |
+| Build Line | 200 | line |
+| Build Wall | 200 | wall |
+| Build Box | 200 | box |
+| Build Stairs | 200 | stairs |
+| Build Disk | 200 | disk |
+| Build Dome | 200 | dome |
+| Build Vein | 200 | vein |
+| Build Flood | 200 | flood |
+| Build Shelter | 200 | shelter |
