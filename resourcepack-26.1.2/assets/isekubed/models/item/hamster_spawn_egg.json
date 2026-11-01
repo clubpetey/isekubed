@@ -1,0 +1,7 @@
+{
+  "_comment": "MV-iv-d Q-D4 (a): 26.1 spawn eggs are full-colour textures and item/template_spawn_egg is gone, so the texture is 1.21.1's template baked with the egg's two colours (0xB5ADA6 base, 0xF3EFEA spots).",
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "isekubed:item/hamster_spawn_egg"
+  }
+}

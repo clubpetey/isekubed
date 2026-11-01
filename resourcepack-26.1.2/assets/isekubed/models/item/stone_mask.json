@@ -1,0 +1,7 @@
+{
+  "_comment": "Chiseled deepslate: it reads as a mask (owner, 2026-10-04).",
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:block/chiseled_deepslate"
+  }
+}

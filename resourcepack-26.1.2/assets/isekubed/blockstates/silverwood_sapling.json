@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "stage=0": {
+      "model": "isekubed:block/silverwood_sapling"
+    },
+    "stage=1": {
+      "model": "isekubed:block/silverwood_sapling"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "revealed=false": { "model": "isekubed:block/sulfur_vent_hidden" },
+    "revealed=true":  { "model": "isekubed:block/sulfur_vent" }
+  }
+}

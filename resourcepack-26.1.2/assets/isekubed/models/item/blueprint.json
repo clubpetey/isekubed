@@ -1,0 +1,7 @@
+{
+  "_comment": "H-vi (Q-G1, smoke 2026-09-14): vanilla paper, blue. Filled and turned, the item definition's range_dispatch on isekubed:blueprint picks the arrow model: 0 blank, 0.2/0.4/0.6/0.8 = rotation 0/90/180/270 (MV-iv-d D3). No grid - the sheet is too small for one.",
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "isekubed:item/blueprint"
+  }
+}

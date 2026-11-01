@@ -1,0 +1,13 @@
+{
+  "_comment": "LOCKED to riker_eye's texture, deliberately - owner, 2026-08-21. The Eye of Loot IS Riker's eye, set into a lens, so the two must never drift apart: repainting one repaints both, which is the point rather than a side effect. Give this its own layer0 only if they are meant to look different.",
+  "_comment_head": "G-v smoke, 2026-08-21: the owner equipped the Eye and the ITEM appeared floating over their head. Vanilla's CustomHeadLayer renders whatever sits in the HEAD slot on the head - that is how a pumpkin or any block is worn - and it only skips items that are ArmorItems. The Eye is deliberately NOT armour (verifyEyeIsEquipableAndNotArmour), so it takes that path. A zero head scale is the whole fix: the layer still renders it, at no size. Doing it in the model rather than in a custom renderer keeps the item's normal appearance in the inventory, the hand and on the ground exactly as vanilla draws it - a custom ItemRenderer would have had to re-implement all three to suppress one.",
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "isekubed:item/riker_eye"
+  },
+  "display": {
+    "head": {
+      "scale": [0, 0, 0]
+    }
+  }
+}

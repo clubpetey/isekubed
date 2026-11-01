@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "open=false": {
+      "model": "isekubed:block/torii_barrel"
+    },
+    "open=true": {
+      "model": "isekubed:block/torii_barrel_open"
+    }
+  }
+}

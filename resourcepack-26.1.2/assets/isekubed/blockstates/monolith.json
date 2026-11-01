@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "cracked=false": {
+      "model": "isekubed:block/monolith"
+    },
+    "cracked=true": {
+      "model": "isekubed:block/monolith"
+    }
+  }
+}
