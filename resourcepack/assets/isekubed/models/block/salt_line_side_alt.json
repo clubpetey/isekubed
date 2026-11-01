@@ -2,8 +2,8 @@
     "render_type": "minecraft:cutout",
     "ambientocclusion": false,
     "textures": {
-        "particle": "isekubed:block/salt_line_dot",
-        "overlay": "isekubed:block/salt_line_overlay"
+        "particle": "minecraft:block/redstone_dust_dot",
+        "overlay": "minecraft:block/redstone_dust_overlay"
     },
     "elements": [
         {   "from": [ 0, 0.25, 8 ],

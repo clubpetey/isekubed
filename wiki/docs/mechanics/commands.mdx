@@ -11,6 +11,7 @@ All of them start with `/ik`.
 | `mana` | Anyone | Shows your pool, the charge in the gems you carry and the total |
 | `mana refill` | Op | Refills your pool and the gems in your hands |
 | `mana empty` | Op | Empties your pool |
+| `mana give <player> <amount>` | Op | Gives mana: fills the player's carried Mana Gems, then makes new ones for the rest. Quest rewards use it |
 | `learn` | Anyone | Lists the glyphs and words you know and how well you have mastered them |
 | `learn grant glyph <id>`, `learn grant word <text>`, `learn grant all` | Op | Teaches glyphs and words |
 | `learn master word <words>`, `learn master <id>` | Op | Marks them as mastered |
@@ -25,7 +26,7 @@ All of them start with `/ik`.
 | `temple enter [player]`, `temple reset [player]`, `temple where [player]` | Op | Moves players in and out of the temple and resets what it remembers |
 | `ritual why` | Op | Explains why a ritual did not fire for the items near you |
 | `vfx ...` | Op | Plays and lists visual effects |
-| `debug ...`, `dumpruntree`, `seraphelle ...`, `temple lay`, `temple deal`, `trial place`, `trial relay` | Op | Developer tools. Spoilers and not for live servers |
+| `debug ...`, `dumpcircles`, `seraphelle ...`, `temple lay`, `temple deal`, `trial place`, `trial relay` | Op | Developer tools. Spoilers and not for live servers |
 | `cad render [x y z]`, `gui infobox [width height]` | Anyone | Client-side tuning: where a held CAD is drawn, and the size of the Eye's info box |
 
 ## Config keys
@@ -91,6 +92,15 @@ Defaults in brackets.
 | Key | Meaning |
 |---|---|
 | `disable_cure_discount` (false) | When true, curing a zombie villager no longer lowers its prices. Trading still counts |
+| `guide_on_first_join` (true) | Whether a new player starts with Magic for Dummies |
+
+### Quests
+
+In `isekubed-common.toml`, read when a world loads.
+
+| Key | Meaning |
+|---|---|
+| `hide_advancements` (false) | Hides the Isekubed advancement tab, for packs that use the FTB Quests chapter. Quests still complete |
 
 ### Enchanting and spells
 
